@@ -1,12 +1,5 @@
 package com.chenjun.utils.converter;
 
-import com.my.common.constant.Constants;
-import com.my.common.constant.WordToXmlConstant;
-import com.my.common.enums.IpBusinessUploadIdFileTypeEnum;
-import lombok.Getter;
-import org.apache.velocity.VelocityContext;
-import org.apache.velocity.app.VelocityEngine;
-
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;

@@ -13,6 +13,7 @@
         <module>CrawlerTask</module>
         <module>ChinaMap</module>
         <module>AsposeWords</module>
+        <module>PdfBook</module>
     </modules>
 
     <parent>
