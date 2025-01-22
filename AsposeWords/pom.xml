@@ -19,12 +19,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.aspose</groupId>
-            <artifactId>aspose-words</artifactId>
-            <version>21.1</version>
-            <systemPath>${project.basedir}/src/main/resources/lib/aspose-words-21.1-jdk17-cracked.jar</systemPath>
-        </dependency>
-        <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
             <version>1.4.01</version>
