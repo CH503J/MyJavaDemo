@@ -49,7 +49,7 @@ public class SplitWords2 {
                 System.out.println("文件已保存至: " + outputPath);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e.getMessage());
         }
     }
 }

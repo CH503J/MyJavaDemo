@@ -76,7 +76,7 @@ public class SplitWords4 {
             System.out.println("权利要求书编号总计: " + claimNumCount);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e.getMessage());
         }
 
         return outputDocMap; // 返回文件名与Document对象的映射

@@ -76,7 +76,7 @@ public class SplitWords3 {
             System.out.println("权利要求书编号总计: " + claimNumCount);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e.getMessage());
         }
     }
 }
