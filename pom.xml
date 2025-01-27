@@ -12,8 +12,8 @@
         <module>WartermarkerAddToPicture</module>
         <module>CrawlerTask</module>
         <module>ChinaMap</module>
-        <module>AsposeWords</module>
         <module>PdfBook</module>
+        <module>WordUtils</module>
     </modules>
 
     <parent>
