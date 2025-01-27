@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class HeaderExtractor {
+public class HeaderExtractorv2 {
 
     public static void headerExtractor(File file) {
         try {
