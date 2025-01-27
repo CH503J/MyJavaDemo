@@ -9,7 +9,7 @@ import java.util.Map;
 public class Split2 {
     public static void main(String[] args) {
         String filePath = "C:\\Development\\JavaProject\\MyJavaDemo\\_test\\originalFiles\\五书模板v4.docx";
-        String outputPath = "C:\\Development\\JavaProject\\MyJavaDemo\\_test\\outputFiles\\";
+        String outputPath = "C:\\Development\\JavaProject\\MyJavaDemo\\_test\\outputDocxFiles\\";
 
         File file = new File(filePath);
 
