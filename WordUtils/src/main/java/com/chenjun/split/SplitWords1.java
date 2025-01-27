@@ -1,4 +1,4 @@
-package com.chenjun;
+package com.chenjun.split;
 
 
 import com.aspose.words.Document;
@@ -8,9 +8,9 @@ import com.aspose.words.Section;
 
 import java.io.File;
 
-public class HeaderExtractorv1 {
+public class SplitWords1 {
 
-    public static void headerExtractor(File file) {
+    public static void splitWords(File file) {
         try {
             Document doc = new Document(file.getPath());
 
