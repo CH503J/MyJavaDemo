@@ -1,16 +1,26 @@
-package com.chenjun.split;
+package com.chenjun.fivebook;
 
-import com.aspose.words.*;
+import com.aspose.words.Document;
+import com.aspose.words.HeaderFooter;
+import com.aspose.words.HeaderFooterType;
+import com.aspose.words.Section;
+import com.chenjun.exception.CustomException;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class SplitWords3 {
+@Slf4j
+public class Split {
+    public static Map<String, Document> split(File file) {
 
-    public static void splitWords(File file) {
-        int claimNumCount = 0; // 编号计数器
+        // 编号计数器，用于统计权利要求项数（冗余功能）
+//        int claimNumCount = 0;
+
+        // key: 文件名，value: Document对象
+        Map<String, Document> outputDocMap = new HashMap<>(); // 用于存储文件名和Document对象
 
         try {
             Document doc = new Document(file.getPath());
@@ -45,10 +55,11 @@ public class SplitWords3 {
 
                 // 截取uuid前4位作为新文件名的前缀
                 String uuid = UUID.randomUUID().toString().substring(0, 4);
-                String outputPath = file.getParent() + File.separator + uuid + "_" + fileName + ".docx";
+                String outputFileName = uuid + "_" + fileName + ".docx";
+
 
                 // 如果是“权利要求书”，统计编号并打印编号及文本
-                if (outputPath.contains("权利要求书")) {
+                /*if (outputFileName.contains("权利要求书")) {
                     newDoc.updateListLabels(); // 更新编号标签
                     for (Paragraph paragraph : newDoc.getSections().get(0).getBody().getParagraphs()) {
                         if (paragraph.getListFormat().isListItem()) { // 判断段落是否为列表项
@@ -60,23 +71,26 @@ public class SplitWords3 {
                             String paragraphText = paragraph.getText().trim();
 
                             // 打印编号和文本内容
-                            System.out.println("编号: " + numText + paragraphText);
+                            // todo 暂时只能输出带编号段的内容
+                            log.info("编号: " + numText + paragraphText);
 
                             // 统计编号数量
                             claimNumCount++;
                         }
                     }
-                }
+                }*/
 
-                newDoc.save(outputPath);
-                System.out.println("文件已保存至: " + outputPath);
+                // 将新文档对象放入map中（不保存到文件）
+                outputDocMap.put(outputFileName, newDoc); // 文件名与Document对象对应
             }
 
             // 打印总的编号数量
-            System.out.println("权利要求书编号总计: " + claimNumCount);
+            //log.info("权利要求书编号总计: " + claimNumCount);
 
         } catch (Exception e) {
-            throw new RuntimeException(e.getMessage());
+            throw new CustomException("拆分文件失败！" + e.getMessage());
         }
+
+        return outputDocMap;
     }
 }

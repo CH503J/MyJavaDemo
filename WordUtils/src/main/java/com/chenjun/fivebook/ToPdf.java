@@ -1,4 +1,4 @@
-package com.chenjun.convert;
+package com.chenjun.fivebook;
 
 import com.aspose.words.Document;
 import com.aspose.words.SaveFormat;
@@ -6,8 +6,8 @@ import com.aspose.words.SaveFormat;
 import java.io.File;
 import java.util.Map;
 
-public class DocxToPdfConverter {
-    public static void convertDocumentsToPdf(Map<String, Document> documents, String outputFolder) throws Exception {
+public class ToPdf {
+    public static void toPdf(Map<String, Document> documents, String outputFolder) throws Exception {
         // 检查输出文件夹是否有效
         File outputDir = new File(outputFolder);
         if (!outputDir.exists() || !outputDir.isDirectory()) {
@@ -27,5 +27,4 @@ public class DocxToPdfConverter {
             System.out.println("转换成功：" + fileName + " -> " + outputFilePath);
         }
     }
-
 }
