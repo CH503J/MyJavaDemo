@@ -1,0 +1,43 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "DrakiaXYZ-Waypoints"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //Debug
+        "Debug": {
+            "Category": "Debug",
+            "DispName": "Debug", //Debug
+            "Description": "Whether to draw debug objects in-world" //Whether to draw debug objects in-world
+        },
+        "ShowNavMesh": {
+            "Category": "Debug",
+            "DispName": "ShowNavMesh", //ShowNavMesh
+            "Description": "Whether to show the navigation mesh" //Whether to show the navigation mesh
+        },
+        "NavMeshOffset": {
+            "Category": "Debug",
+            "DispName": "NavMeshOffset", //NavMeshOffset
+            "Description": "The amount to offset the nav mesh so it's more visible over the terrain" //The amount to offset the nav mesh so it's more visible over the terrain
+        },
+        //Export (Requires Debug)
+        "ExportNavMesh": {
+            "Category": "Export (Requires Debug)",
+            "DispName": "ExportNavMesh", //ExportNavMesh
+            "Description": "Whether to export the nav mesh on map load" //Whether to export the nav mesh on map load
+        },
+        //General
+        "EnableCustomNavmesh": {
+            "Category": "General",
+            "DispName": "EnableCustomNavmesh", //EnableCustomNavmesh
+            "Description": "Whether to use custom nav meshes when available" //Whether to use custom nav meshes when available
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

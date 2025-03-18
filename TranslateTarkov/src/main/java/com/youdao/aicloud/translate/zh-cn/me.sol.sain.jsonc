@@ -1,0 +1,25 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "SAIN"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        "Open Editor": {
+            "Category": "SAIN Editor",
+            "DispName": "打开 编辑器", //Open Editor
+            "Description": "按下时打开 编辑器" //Opens the Editor on press
+        },
+        "Open Editor Shortcut": {
+            "Category": "SAIN Editor",
+            "DispName": "打开 编辑器的 快捷方式", //Open Editor Shortcut
+            "Description": "用于切换编辑器的键盘快捷方式" //The keyboard shortcut that toggles editor
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

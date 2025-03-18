@@ -1,0 +1,423 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "DynamicMaps动态地图"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //1. General
+        "Replace Map Screen": {
+            "Category": "1. General",
+            "DispName": "更换原始地图分页界面", //Replace Map Screen
+            "Description": "如果地图应该替换BSG默认地图屏幕，则需要从已修改的地图切换到刷新" //If the map should replace the BSG default map screen, requires swapping away from modded map to refresh
+        },
+        "Center on Player Hotkey": {
+            "Category": "1. General",
+            "DispName": "玩家居中热键", //Center on Player Hotkey
+            "Description": "当地图打开时按下按钮，玩家将处于中心位置" //Pressed while the map is open, centers the player
+        },
+        "Move Map Up Hotkey": {
+            "Category": "1. General",
+            "DispName": "向上移动地图热键", //Move Map Up Hotkey
+            "Description": "热键向上移动地图" //Hotkey to move the map up
+        },
+        "Move Map Down Hotkey": {
+            "Category": "1. General",
+            "DispName": "向下移动地图热键", //Move Map Down Hotkey
+            "Description": "热键向下移动地图" //Hotkey to move the map down
+        },
+        "Move Map Left Hotkey": {
+            "Category": "1. General",
+            "DispName": "向左移动地图热键", //Move Map Left Hotkey
+            "Description": "热键向左移动地图" //Hotkey to move the map left
+        },
+        "Move Map Right Hotkey": {
+            "Category": "1. General",
+            "DispName": "热键向右移动地图", //Move Map Right Hotkey
+            "Description": "热键向右移动地图" //Hotkey to move the map right
+        },
+        "Move Map Hotkey Speed": {
+            "Category": "1. General",
+            "DispName": "移动地图热键速度", //Move Map Hotkey Speed
+            "Description": "地图应该移动多快，单位是每秒地图百分比" //How fast the map should move, units are map percent per second
+        },
+        "Change Map Level Up Hotkey": {
+            "Category": "1. General",
+            "DispName": "改变地图升级热键", //Change Map Level Up Hotkey
+            "Description": "热键向上移动地图（shift-scroll-up也可以在地图屏幕上这样做）" //Hotkey to move the map level up (shift-scroll-up also does this in map screen)
+        },
+        "Change Map Level Down Hotkey": {
+            "Category": "1. General",
+            "DispName": "改变地图水平向下热键", //Change Map Level Down Hotkey
+            "Description": "热键移动地图水平向下（shift-scroll-down也可以在地图屏幕上这样做）" //Hotkey to move the map level down (shift-scroll-down also does this in map screen)
+        },
+        "Zoom Map In Hotkey": {
+            "Category": "1. General",
+            "DispName": "在热键缩放地图", //Zoom Map In Hotkey
+            "Description": "热键放大地图（向上滚动也可以在地图屏幕上做到这一点）" //Hotkey to zoom the map in (scroll-up also does this in map screen)
+        },
+        "Zoom Map Out Hotkey": {
+            "Category": "1. General",
+            "DispName": "缩放地图热键", //Zoom Map Out Hotkey
+            "Description": "热键缩放地图（向下滚动在地图屏幕中也有此功能）" //Hotkey to zoom the map out (scroll-down also does this in map screen)
+        },
+        "Zoom Map Hotkey Speed": {
+            "Category": "1. General",
+            "DispName": "缩放地图热键速度", //Zoom Map Hotkey Speed
+            "Description": "地图应该以多快的速度通过热键缩放" //How fast the map should zoom by hotkey
+        },
+        "Dump Info Hotkey": {
+            "Category": "1. General",
+            "DispName": "转储信息热键", //Dump Info Hotkey
+            "Description": "当地图打开时按下，转储json MarkerDefs用于提取，战利品，并切换到插件文件夹的根目录" //Pressed while the map is open, dumps json MarkerDefs for extracts, loot, and switches into root of plugin folder
+        },
+        //2. Dynamic Markers
+        "Show Player Marker": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示玩家标记", //Show Player Marker
+            "Description": "玩家标记是否应该在raid中显示" //If the player marker should be shown in raid
+        },
+        "Show Friendly Player Markers": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示友好玩家标记", //Show Friendly Player Markers
+            "Description": "是否友军标记应该在突袭中显示" //If friendly player markers should be shown in-raid
+        },
+        "Show Enemy Player Markers": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示敌对玩家标记", //Show Enemy Player Markers
+            "Description": "是否应该在团队中显示敌对玩家标记（通常用于调试）" //If enemy player markers should be shown in-raid (generally for debug)
+        },
+        "Show Scav Markers": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示Scav标记", //Show Scav Markers
+            "Description": "如果敌人的掠夺者标记应该在突袭中显示（通常用于调试）" //If enemy scav markers should be shown in-raid (generally for debug)
+        },
+        "Show Boss Markers": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示Boss标记", //Show Boss Markers
+            "Description": "如果敌人的boss标记应该在突袭中显示" //If enemy boss markers should be shown in-raid
+        },
+        "Show Locked Door Status": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示门锁状态", //Show Locked Door Status
+            "Description": "如果门锁上，则应根据获取钥匙的情况更新门锁标记" //If locked door markers should be updated with status based on key acquisition
+        },
+        "Show Quests In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示任务", //Show Quests In Raid
+            "Description": "如果任务应该在raid中显示" //If quests should be shown in raid
+        },
+        "Show Extracts In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示Raid中的摘录", //Show Extracts In Raid
+            "Description": "如果提取物应该在raid中显示" //If extracts should be shown in raid
+        },
+        "Show Extracts Status In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "显示Raid中萃取状态", //Show Extracts Status In Raid
+            "Description": "如果提取物应根据其在raid中的状态着色" //If extracts should be colored according to their status in raid
+        },
+        "Show Transit Points In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示过境点", //Show Transit Points In Raid
+            "Description": "如果凌日应该显示在raid中" //If transits should be shown in raid
+        },
+        "Show Dropped Backpack In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中展示掉落的背包", //Show Dropped Backpack In Raid
+            "Description": "如果玩家掉落的背包（而不是其他人）应该出现在raid中" //If the player's dropped backpacks (not anyone elses) should be shown in raid
+        },
+        "Show wish listed items In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示愿望列表项目", //Show wish listed items In Raid
+            "Description": "在raid地图上显示你的愿望清单中的物品" //Shows items that are in your wishlist on the map in raid
+        },
+        "Show BTR In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示BTR", //Show BTR In Raid
+            "Description": "如果BTR应该在raid中显示" //If the BTR should be shown in raid
+        },
+        "Show Airdrops In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在突袭中显示空投", //Show Airdrops In Raid
+            "Description": "空投物品降落时应该在突袭中显示" //If airdrops should be shown in raid when they land
+        },
+        "Show Hidden Stashes In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示隐藏的藏匿物", //Show Hidden Stashes In Raid
+            "Description": "如果隐藏的藏身处应该在突袭中显示" //If hidden stashes should be shown in raid
+        },
+        "Show Friendly Corpses In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在突袭中显示友军尸体", //Show Friendly Corpses In Raid
+            "Description": "如果友军的尸体应该在突袭中显示" //If friendly corpses should be shown in raid
+        },
+        "Show Player-killed Corpses In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示玩家杀死的尸体", //Show Player-killed Corpses In Raid
+            "Description": "如果玩家杀死的尸体应该在raid中显示，那么被杀死的boss将以另一种颜色显示" //If corpses killed by the player should be shown in raid, killed bosses will be shown in another color
+        },
+        "Show Friendly-killed Corpses In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在突袭中显示友军杀死的尸体", //Show Friendly-killed Corpses In Raid
+            "Description": "如果友方玩家杀死的尸体应该在raid中显示，那么被杀死的boss将以另一种颜色显示" //If corpses killed by friendly players should be shown in raid, killed bosses will be shown in another color
+        },
+        "Show Boss Corpses In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在Raid中显示Boss尸体", //Show Boss Corpses In Raid
+            "Description": "boss的尸体（玩家杀死的除外）是否应该在raid中显示" //If boss corpses (other than ones killed by the player) should be shown in raid
+        },
+        "Show Other Corpses In Raid": {
+            "Category": "2. Dynamic Markers",
+            "DispName": "在突袭中显示其他尸体", //Show Other Corpses In Raid
+            "Description": "如果尸体（除了友军或被玩家杀死的尸体）应该在突袭中显示" //If corpses (other than friendly ones or ones killed by the player) should be shown in raid
+        },
+        //3. Progression
+        "Require a map in your inventory": {
+            "Category": "3. Progression",
+            "DispName": "在你的库存中需要一张地图", //Require a map in your inventory
+            "Description": "需要你有一个地图在你的库存，以便在raid中查看地图。" //Requires you to have a map in your inventory in order to view the map in raid.
+        },
+        "Intel level required to show PMCs": {
+            "Category": "3. Progression",
+            "DispName": "需要显示pmc的情报级别", //Intel level required to show PMCs
+            "Description": "如果情报级别等于或低于此值，它将显示pmc" //If intel level is at or below this value it will show PMCs
+        },
+        "Intel level required to show bosses": {
+            "Category": "3. Progression",
+            "DispName": "需要向老板展示情报级别", //Intel level required to show bosses
+            "Description": "如果情报级别等于或低于这个值，它会显示老板" //If intel level is at or below this value it will show bosses
+        },
+        "Intel level required to show scavs": {
+            "Category": "3. Progression",
+            "DispName": "显示拾荒者需要情报级别", //Intel level required to show scavs
+            "Description": "如果情报级别等于或低于此值，它将显示拾荒者" //If intel level is at or below this value it will show scavs
+        },
+        "Intel level required to show friendly PMCs": {
+            "Category": "3. Progression",
+            "DispName": "情报级别要求显示友好的pmc", //Intel level required to show friendly PMCs
+            "Description": "情报级别等级等于或低于这个值，它将显示友好的pmc" //If intel level is at or below this value it will show friendly PMCs
+        },
+        "Intel level required to show corpses": {
+            "Category": "3. Progression",
+            "DispName": "显示尸体需要情报级别", //Intel level required to show corpses
+            "Description": "如果情报水平等于或低于这个值，就会显示尸体" //If intel level is at or below this value it will show corpses
+        },
+        "Intel level required to show airdrops": {
+            "Category": "3. Progression",
+            "DispName": "需要情报级别才能显示空投", //Intel level required to show airdrops
+            "Description": "如果情报水平等于或低于此值，它将显示空投" //If intel level is at or below this value it will show airdrops
+        },
+        "Intel level required to show wish listed loot items": {
+            "Category": "3. Progression",
+            "DispName": "情报级别要求显示愿望列出的战利品项目", //Intel level required to show wish listed loot items
+            "Description": "如果情报级别等于或低于此值，它将显示愿望列出的战利品项目" //If intel level is at or below this value it will show wish listed loot items
+        },
+        "Intel level required to show hidden stashes": {
+            "Category": "3. Progression",
+            "DispName": "要显示隐藏的仓库需要情报级别的信息", //Intel level required to show hidden stashes
+            "Description": "如果情报级别等于或低于此值，它将显示隐藏的藏匿处" //If intel level is at or below this value it will show hidden stashes
+        },
+        //4. In-Raid
+        "Auto Select Level": {
+            "Category": "4. In-Raid",
+            "DispName": "自动选择楼层", //Auto Select Level
+            "Description": "如果楼层应该根据玩家在raid中的位置自动选择" //If the level should be automatically selected based on the players position in raid
+        },
+        "Auto Center On Player Marker": {
+            "Category": "4. In-Raid",
+            "DispName": "玩家居中自动标记", //Auto Center On Player Marker
+            "Description": "在raid中显示地图时，玩家标记是否应该居中（与“记住地图位置”冲突）" //If the player marker should be centered when showing the map in raid (Conflicts with 'Remember Map Position')
+        },
+        "Reset Zoom On Center": {
+            "Category": "4. In-Raid",
+            "DispName": "重置缩放中心", //Reset Zoom On Center
+            "Description": "如果在raid中每次打开地图时缩放级别都应该重置（与“记住地图位置”冲突）" //If the zoom level should be reset each time that the map is opened while in raid (Conflicts with 'Remember Map Position')
+        },
+        "Remember Map Position": {
+            "Category": "4. In-Raid",
+            "DispName": "记住地图位置", //Remember Map Position
+            "Description": "我们是否应该记住地图位置（地图位置记忆只维护当前raid）（与“自动中心球员标记”和“重置缩放中心”冲突）" //Should we remember the map position (Map position memory is only maintained for the current raid) (Conflicts with 'Auto Center On Player Marker' and 'Reset Zoom On Center')
+        },
+        "Centering On Player Zoom Level": {
+            "Category": "4. In-Raid",
+            "DispName": "以玩家缩放级别为中心", //Centering On Player Zoom Level
+            "Description": "当以玩家为中心时，应该使用什么缩放级别（0完全放大，1完全放大）" //What zoom level should be used as while centering on the player (0 is fully zoomed out, and 1 is fully zoomed in)
+        },
+        "Main map zoom": {
+            "Category": "4. In-Raid",
+            "DispName": "主地图缩放", //Main map zoom
+            "Description": "主地图应该使用什么缩放级别。（Tab视图/Peek视图）（0完全放大，1完全放大）" //What zoom level should be used for the main map. (Tab view/Peek view) (0 is fully zoomed out, and 1 is fully zoomed in)
+        },
+        "Peek at Map Shortcut": {
+            "Category": "4. In-Raid",
+            "DispName": "查看地图快捷方式", //Peek at Map Shortcut
+            "Description": "这个键盘快捷键可以查看地图" //The keyboard shortcut to peek at the map
+        },
+        "Hold for Peek": {
+            "Category": "4. In-Raid",
+            "DispName": "按住查看", //Hold for Peek
+            "Description": "如果要保持快捷键打开。如果禁用，按钮切换" //If the shortcut should be held to keep it open. If disabled, button toggles
+        },
+        "Peek Transition enabled": {
+            "Category": "4. In-Raid",
+            "DispName": "启用峰值过渡", //Peek Transition enabled
+            "Description": "启用地图过渡动画（当禁用时，所有的东西都会被捕捉）" //Enable the map transition animations (When disabled everything will snap)
+        },
+        //5. Mini-map
+        "Mini-map enabled": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图开关", //Mini-map enabled
+            "Description": "小地图开关" //Enable the mini-map
+        },
+        "Mini-map position": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图位置", //Mini-map position
+            "Description": "小地图显示在哪个角落" //What corner is the mini-map displayed in
+        },
+        "Mini-map size horizontal": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图水平位置", //Mini-map size horizontal
+            "Description": "小地图水平位置" //Horizontal size of the mini-map
+        },
+        "Mini-map size vertical": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图垂直位置", //Mini-map size vertical
+            "Description": "小地图垂直位置" //Vertical size of the mini-map
+        },
+        "Mini-map offset horizontal": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图水平偏移量", //Mini-map offset horizontal
+            "Description": "从边缘的水平偏移量（这些值根据屏幕分辨率更新，如果你改变了分辨率需要重新启动）" //Horizontal Offset from the edge (These values update according to screen resolution, REQUIRES RESTART IF YOU CHANGED YOUR RESOLUTION)
+        },
+        "Mini-map offset vertical": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图垂直偏移量", //Mini-map offset vertical
+            "Description": "从边缘的垂直偏移量（这些值根据屏幕分辨率更新，如果你改变了分辨率需要重新启动）" //Vertical offset from the edge (These values update according to screen resolution, REQUIRES RESTART IF YOU CHANGED YOUR RESOLUTION)
+        },
+        "Show or Hide the mini-map": {
+            "Category": "5. Mini-map",
+            "DispName": "开关小地图", //Show or Hide the mini-map
+            "Description": "开关小地图" //Show or hide the mini-map
+        },
+        "Mini map zoom": {
+            "Category": "5. Mini-map",
+            "DispName": "小地图缩放", //Mini map zoom
+            "Description": "迷你地图应该使用什么缩放级别？（0完全缩小，15完全放大）" //What zoom level should be used for the mini map. (0 is fully zoomed out, and 15 is fully zoomed in)
+        },
+        "Zoom in key bind": {
+            "Category": "5. Mini-map",
+            "DispName": "放大键绑定", //Zoom in key bind
+            "Description": "放大迷你地图键绑定" //Zoom in on mini map key bind
+        },
+        "Zoom out key bind": {
+            "Category": "5. Mini-map",
+            "DispName": "缩小键绑定", //Zoom out key bind
+            "Description": "缩小迷你地图键绑定" //Zoom out on mini map key bind
+        },
+        //6. Marker Colors
+        "Your player marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "玩家标记颜色", //Your player marker color
+            "Description": "标记的颜色" //Color of the marker
+        },
+        "Bear marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "Bear标记颜色", //Bear marker color
+            "Description": "标记的颜色" //Color of the marker
+        },
+        "Usec marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "Usec标记颜色", //Usec marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Scav marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "Scav标记颜色", //Scav marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Boss marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "Boss标记颜色", //Boss marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Airdrop marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "空投标记颜色", //Airdrop marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Backpack marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "背包标记颜色", //Backpack marker color
+            "Description": "Color of the marker" //Color of the marker
+        },
+        "Loot marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "战利品标记颜色", //Loot marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Killed corpse marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "死亡的尸体标记颜色", //Killed corpse marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Killed boss corpse marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "死亡的boss标记颜色", //Killed boss corpse marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Killed by other corpse marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "死亡的其他尸体标记颜色", //Killed by other corpse marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "BTR marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "BTR标记颜色", //BTR marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Extract default marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "默认撤离点标记颜色", //Extract default marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Extract open marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "开放撤离点标记颜色", //Extract open marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Extract closed marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "关闭的撤离点标记颜色", //Extract closed marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Extract has requirements marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "任务物品标记颜色", //Extract has requirements marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        "Transit point marker color": {
+            "Category": "6. Marker Colors",
+            "DispName": "换图撤离点标记颜色", //Transit point marker color
+            "Description": "标记颜色" //Color of the marker
+        },
+        //7. External Mod Support
+        "Show Heli Crash Marker": {
+            "Category": "7. External Mod Support",
+            "DispName": "显示直升机坠毁标记", //Show Heli Crash Marker
+            "Description": "如果直升机坠毁地点应该在突袭中标记" //If the heli crash site should be marked in raid
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "EMiniMapPosition": {
+            "右上角": "右上角",
+            "右下角": "右下角",
+            "左上角": "左上角",
+            "左下角": "左下角"
+        }
+    }
+}

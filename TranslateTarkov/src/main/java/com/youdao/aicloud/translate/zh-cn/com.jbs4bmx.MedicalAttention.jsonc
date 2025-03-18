@@ -1,0 +1,25 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "MedicalAttention"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        "Walk while performing surgery.": {
+            "Category": "Config",
+            "DispName": "Walk while performing surgery.", //Walk while performing surgery.
+            "Description": "Player can walk while performing surgery." //Player can walk while performing surgery.
+        },
+        "Run while using meds.": {
+            "Category": "Config",
+            "DispName": "Run while using meds.", //Run while using meds.
+            "Description": "Player can run while using meds." //Player can run while using meds.
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

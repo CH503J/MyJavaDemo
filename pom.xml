@@ -15,6 +15,7 @@
         <module>PdfBook</module>
         <module>WordUtils</module>
         <module>Common</module>
+        <module>TranslateTarkov</module>
     </modules>
 
     <parent>
@@ -57,6 +58,16 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
             <version>${velocity.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
     </dependencies>
 </project>

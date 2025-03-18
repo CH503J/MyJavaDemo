@@ -1,0 +1,501 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "Tyfon.UIFixes"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //A. Interface
+        "Keep Messages Window Open": {
+            "Category": "A. Interface",
+            "DispName": "保持消息窗口打开", //Keep Messages Window Open
+            "Description": "收到转移内容后，从您上次中断的位置重新打开消息窗口" //After receiving items from a transfer, reopen the messages window where you left off
+        },
+        "Autofill Quest Item Turn-ins": {
+            "Category": "A. Interface",
+            "DispName": "自动填充任务物品上交", //Autofill Quest Item Turn-ins
+            "Description": "上交任务物品时自动选择匹配的物品。就像为您按下 AUTO 按钮一样。" //Auto-select matching items when turning in quest items. Like pushing the AUTO button for you.
+        },
+        "Context Menu Flyout on Right": {
+            "Category": "A. Interface",
+            "DispName": "右侧的上下文菜单弹出按钮", //Context Menu Flyout on Right
+            "Description": "按照 BSG 的意图打开右侧的上下文菜单子菜单，但未能做到这一点" //Open context menu sub-menu to the right, as BSG intended but failed to do
+        },
+        "Allow Context Menu While Searching": {
+            "Category": "A. Interface",
+            "DispName": "搜索时允许上下文菜单", //Allow Context Menu While Searching
+            "Description": "允许上下文菜单在搜索时工作" //Allow the context menu to work while searching
+        },
+        "Server Operation Queue Time": {
+            "Category": "A. Interface",
+            "DispName": "服务器作队列时间", //Server Operation Queue Time
+            "Description": "客户端会等待这么长时间来批量执行清单作，然后再将其发送到服务器。Vanilla Tarkov is 60 (!)" //The client waits this long to batch inventory operations before sending them to the server. Vanilla Tarkov is 60 (!)
+        },
+        "Limit Nonstandard Drags": {
+            "Category": "A. Interface",
+            "DispName": "限制非标准阻力", //Limit Nonstandard Drags
+            "Description": "当 shift 未下 shift 时，将拖动限制为鼠标左键。保持此设置处于启用状态，以最大程度地减少与多选框的冲突。" //Constrain dragging to the left mouse, when shift is not down. Leave this setting enabled to minimize conflicts with the multiselect box.
+        },
+        "Restore Async Scroll Positions": {
+            "Category": "A. Interface",
+            "DispName": "恢复异步滚动位置", //Restore Async Scroll Positions
+            "Description": "在动态加载内容的滚动视图中，在内容加载时向下滚动以恢复旧的滚动位置" //In scroll views that load content dynamically, scroll down as the content loads to restore old scroll position
+        },
+        "Remove Default Mag Preset Name": {
+            "Category": "A. Interface",
+            "DispName": "移除默认弹匣预设名称", //Remove Default Mag Preset Name
+            "Description": "清除默认的mag预设名称，改进mag预设界面。禁用此选项以恢复不稳定的默认UI。" //Clear the default mag preset name and improve the mag preset UI. Disable this to restore the wonky default UI.
+        },
+        "Mag Presets Context Menu on Bullets": {
+            "Category": "A. Interface",
+            "DispName": "弹匣预设子弹上的上下文菜单", //Mag Presets Context Menu on Bullets
+            "Description": "For some reason vanilla EFT shows the Load From Preset context menu on bullets. It serves no purpose" //For some reason vanilla EFT shows the Load From Preset context menu on bullets. It serves no purpose
+        },
+        //B. Dialogs
+        "Show Weapon Preset Confirmation Dialog": {
+            "Category": "B. Dialogs",
+            "DispName": "显示武器预设确认对话框", //Show Weapon Preset Confirmation Dialog
+            "Description": "当你离开和/或关闭未保存的武器预设时显示确认对话框" //When to show a confirmation dialog when you leave and/or close an unsaved weapon preset
+        },
+        "Show Transfer Items Confirmation Dialog": {
+            "Category": "B. Dialogs",
+            "DispName": "显示转移项目确认对话框", //Show Transfer Items Confirmation Dialog
+            "Description": "什么时候显示确认对话框，当你关闭项目转移屏幕没有采取所有的项目" //When to show the confirmation dialog when you close the item transfer screen without taking all the items
+        },
+        "Click Outside of Dialogs to Close": {
+            "Category": "B. Dialogs",
+            "DispName": "单击对话框外部关闭", //Click Outside of Dialogs to Close
+            "Description": "在弹出对话框外单击将关闭该对话框" //Clicking outside of a popup dialog will close the dialog
+        },
+        //C. Gameplay
+        "Use Toggle/Hold Aiming": {
+            "Category": "C. Gameplay",
+            "DispName": "使用切换/保持瞄准", //Use Toggle/Hold Aiming
+            "Description": "轻按瞄准键切换瞄准，长按持续瞄准键" //Tap the aim key to toggle aiming, or hold the key for continuous aiming
+        },
+        "Use Toggle/Hold Sprint": {
+            "Category": "C. Gameplay",
+            "DispName": "使用切换/保持冲刺", //Use Toggle/Hold Sprint
+            "Description": "轻按冲刺键切换冲刺状态，长按持续冲刺状态" //Tap the sprint key to toggle sprinting, or hold the key for continuous sprinting
+        },
+        "Use Toggle/Hold Tactical Device": {
+            "Category": "C. Gameplay",
+            "DispName": "使用切换/按住战术装置", //Use Toggle/Hold Tactical Device
+            "Description": "轻按战术装备键来切换战术装备，或者长按该键进行连续操作。注意这将覆盖塔科夫的新“战术设备激活模式”" //Tap the tactical device key to toggle your tactical device, or hold the key for continuous. Note that this will override Tarkov's new 'Tactical device activation mode'
+        },
+        "Use Toggle/Hold Headlight": {
+            "Category": "C. Gameplay",
+            "DispName": "使用切换/保持前灯", //Use Toggle/Hold Headlight
+            "Description": "轻按大灯键来切换你的大灯，或保持连续键" //Tap the headlight key to toggle your headlight, or hold the key for continuous
+        },
+        "Use Toggle/Hold Goggles": {
+            "Category": "C. Gameplay",
+            "DispName": "使用切换/保持护目镜", //Use Toggle/Hold Goggles
+            "Description": "轻按护目镜键，可切换夜视/护目镜/面罩，或长按连续键" //Tap the goggles key to toggle night vision/goggles/faceshield, or hold the key for continuous
+        },
+        "Prevent Scope Zoom in Inventory": {
+            "Category": "C. Gameplay",
+            "DispName": "避免在库存中放大范围", //Prevent Scope Zoom in Inventory
+            "Description": "Prevent" //Prevent
+        },
+        "Modify Equipped Weapons": {
+            "Category": "C. Gameplay",
+            "DispName": "修改装备武器", //Modify Equipped Weapons
+            "Description": "允许修改装备的武器，包括重要部件，在突袭之外" //Enable the modification of equipped weapons, including vital parts, out of raid
+        },
+        "Modify Weapons In Raid": {
+            "Category": "C. Gameplay",
+            "DispName": "在Raid中修改武器", //Modify Weapons In Raid
+            "Description": "在突袭中，何时允许修改未装备武器的重要部件" //When to enable the modification of vital parts of unequipped weapons, in raid
+        },
+        "Modify Equipped Armor Plates In Raid": {
+            "Category": "C. Gameplay",
+            "DispName": "在Raid中修改装备的装甲", //Modify Equipped Armor Plates In Raid
+            "Description": "允许装甲板被移除并插入装备的装甲，在突袭中" //Allow armor plates to be removed and inserted on equipped armor, in raid
+        },
+        "Hide Unimplemented Door Actions": {
+            "Category": "C. Gameplay",
+            "DispName": "隐藏未执行的门动作", //Hide Unimplemented Door Actions
+            "Description": "隐藏你实际上不能做的动作，如“砰”和“清除”等" //Hides actions you can't actually do, like \"Bang and Clear\", etc from locked doors
+        },
+        "Enable Load Ammo Context Menu": {
+            "Category": "C. Gameplay",
+            "DispName": "启用加载弹药上下文菜单", //Enable Load Ammo Context Menu
+            "Description": "允许在突袭中通过弹匣上下文菜单加载弹药" //Allows ammo to be loaded through the magazine context menu while in a raid
+        },
+        "Quickbind Matching Grenade After Throw": {
+            "Category": "C. Gameplay",
+            "DispName": "投掷后快速绑定匹配手榴弹", //Quickbind Matching Grenade After Throw
+            "Description": "投掷一个有快速束缚的手榴弹后，把快速束缚移动到另一个相同类型的手榴弹上，如果你有一个的话" //After throwing a grenade that had a quickbind, move the quickbind to another grenade of the same type, if you have one
+        },
+        //D. Mouse
+        "Unlock Cursor": {
+            "Category": "D. Mouse",
+            "DispName": "打开游标", //Unlock Cursor
+            "Description": "在窗口、最大化窗口和全屏窗口模式下解锁光标。请注意，您必须退出游戏并重新进入游戏以使其生效。" //Unlock cursor in Windowed, Maximized Windowed, and FullScreen Windowed modes. Note that you must alt-tab out of the game and back in for this to take effect.
+        },
+        "Mousewheel Scrolling Speed": {
+            "Category": "D. Mouse",
+            "DispName": "鼠标滚轮滚动速度", //Mousewheel Scrolling Speed
+            "Description": "用鼠标滚轮滚动多少行" //How many rows to scroll with the mousewheel
+        },
+        "Use Different Scrolling Speed in Raid": {
+            "Category": "D. Mouse",
+            "DispName": "在Raid中使用不同的滚动速度", //Use Different Scrolling Speed in Raid
+            "Description": "是否在raid中使用单独的鼠标滚轮滚动速度" //Whether to use a separate mousewheel scroll speed in raid
+        },
+        "Mousewheel Scrolling Speed in Raid": {
+            "Category": "D. Mouse",
+            "DispName": "在Raid中鼠标滚轮滚动速度", //Mousewheel Scrolling Speed in Raid
+            "Description": "一个单独的鼠标滚轮滚动速度在raid" //A separate mousewheel scroll speed for in raid
+        },
+        //E. Interface Keybinds
+        "Enable Home/End Keys": {
+            "Category": "E. Interface Keybinds",
+            "DispName": "启用Home/End键", //Enable Home/End Keys
+            "Description": "使用Home和End键滚动到库存的顶部和底部" //Use the Home and End keys to scroll to the top and bottom of inventories
+        },
+        "Rebind PageUp/PageDown (requires restart)": {
+            "Category": "E. Interface Keybinds",
+            "DispName": "重新绑定PageUp/PageDown（需要重启）", //Rebind PageUp/PageDown (requires restart)
+            "Description": "更改PageUp和PageDown以上下滚动一页" //Change PageUp and PageDown to scroll up and down one page
+        },
+        "Highlight Search Box": {
+            "Category": "E. Interface Keybinds",
+            "DispName": "高亮搜索框", //Highlight Search Box
+            "Description": "键绑定突出隐藏的手工，手册和跳蚤市场的搜索框" //Keybind to highlight the search box in hideout crafting, handbook, and flea market
+        },
+        //F. Item Keybinds
+        "Inspect Shortcut": {
+            "Category": "F. Item Keybinds",
+            "DispName": "检查快捷键", //Inspect Shortcut
+            "Description": "键绑定检查一个项目" //Keybind to inspect an item
+        },
+        "Open Shortcut": {
+            "Category": "F. Item Keybinds",
+            "DispName": "打开快捷方式", //Open Shortcut
+            "Description": "打开一个容器" //Keybind to open a container
+        },
+        "Top Up Ammo Shortcut": {
+            "Category": "F. Item Keybinds",
+            "DispName": "填满弹药快捷方式", //Top Up Ammo Shortcut
+            "Description": "键绑定，以填补弹药堆栈" //Keybind to top up an ammo stack
+        },
+        "Reload Weapon Shortcut": {
+            "Category": "F. Item Keybinds",
+            "DispName": "重装武器快捷方式", //Reload Weapon Shortcut
+            "Description": "键绑定重新装填武器。请注意，这只是在菜单中，并不影响正常的重载键。" //Keybind to reload a weapon. Note that this is solely in the menus, and doesn't affect the normal reload key.
+        },
+        "Unload Mag/Ammo Shortcut": {
+            "Category": "F. Item Keybinds",
+            "DispName": "卸载弹药快捷键", //Unload Mag/Ammo Shortcut
+            "Description": "键绑定卸载弹匣中的弹药，或枪中的弹匣" //Keybind to unload the ammo in a magazine, or a magazine in a gun
+        },
+        "Filter by Item Shortcut": {
+            "Category": "F. Item Keybinds",
+            "DispName": "按项目快捷方式过滤", //Filter by Item Shortcut
+            "Description": "键绑定搜索跳蚤市场的这个项目" //Keybind to search flea market for this item
+        },
+        "Select All of Type": {
+            "Category": "F. Item Keybinds",
+            "DispName": "选择所有类型", //Select All of Type
+            "Description": "键绑定选择当前容器中相同类型的所有项目（需要Multiselect）" //Keybind to select all items of the same type in the current container (requires Multiselect)
+        },
+        "Shift-Click to Sorting Table": {
+            "Category": "F. Item Keybinds",
+            "DispName": "Shift-Click到排序表", //Shift-Click to Sorting Table
+            "Description": "这个设置允许您启用/禁用按shift键的默认Tarkov行为，以将它们传输到排序表。" //This setting lets you enable/disable the default Tarkov behavior of shift-clicking items to transfer them to the sorting table.
+        },
+        "Block Text Inputs on Item Mouseover": {
+            "Category": "F. Item Keybinds",
+            "DispName": "将鼠标悬停在项目上时阻止文本输入", //Block Text Inputs on Item Mouseover
+            "Description": "为了使键绑定工作并且不与文本框混淆，当鼠标移到一个项目上时按下的键不会被发送到当前聚焦的文本框" //In order for keybinds to work and not get mixed up with textboxes, key presses while mousing over an item will not be sent to the currently focused textbox
+        },
+        //G. Gameplay Keybinds
+        "Change Quickbound Tactical Mode": {
+            "Category": "G. Gameplay Keybinds",
+            "DispName": "改变快速束缚战术模式", //Change Quickbound Tactical Mode
+            "Description": "当激活快速绑定战术装置时，按住此修改符将切换其激活模式" //Holding this modifer when activating a quickbound tactical device will switch its active mode
+        },
+        //H. Multiselect
+        "Enable Multiselect": {
+            "Category": "H. Multiselect",
+            "DispName": "支持多选", //Enable Multiselect
+            "Description": "通过Shift-click和拖拽选择启用多选。这不能与自动打开排序表一起使用" //Enable multiselect via Shift-click and drag-to-select. This cannot be used together with Auto-open Sorting Table
+        },
+        "Enable Multiselect In Raid": {
+            "Category": "H. Multiselect",
+            "DispName": "启用Raid中的Multiselect功能", //Enable Multiselect In Raid
+            "Description": "在raid中启用多选择功能。" //Enable multiselect functionality in raid.
+        },
+        "Enable Multiselect with Shift-Click": {
+            "Category": "H. Multiselect",
+            "DispName": "启用多选与Shift-Click", //Enable Multiselect with Shift-Click
+            "Description": "通过shift-click将项目添加到所选内容中。如果禁用此功能，则多选的唯一方法是使用选择框" //Add items to the selection by shift-clicking them. If you disable this, the only way to multiselect is with the selection box
+        },
+        "Selection Box Key": {
+            "Category": "H. Multiselect",
+            "DispName": "选择框键", //Selection Box Key
+            "Description": "拖动以创建选择框时按住的鼠标按钮或键盘键。按重置键使用鼠标0（鼠标左键）" //Mouse button or keyboard key to hold while dragging to create a selection box. Press Reset to use Mouse0 (left mouse button)
+        },
+        "Multiselect Item Placement": {
+            "Category": "H. Multiselect",
+            "DispName": "多选项目放置", //Multiselect Item Placement
+            "Description": "控件放置多选项的位置（相对于要拖动的项）" //Controls where multiselected items are placed, relative to the item being dragged
+        },
+        "Show Multiselect Debug": {
+            "Category": "H. Multiselect",
+            "DispName": "显示多选调试", //Show Multiselect Debug
+            "Description": "打开多选显示开关" //Enable multi-select debugging display
+        },
+        //I. Item Swapping
+        "Enable In-Place Item Swapping": {
+            "Category": "I. Item Swapping",
+            "DispName": "启用就地物品交换", //Enable In-Place Item Swapping
+            "Description": "如果可能的话，将一个项目拖到另一个项目上以交换它们的位置" //Drag one item onto another to swap their positions, if possible
+        },
+        "Reload Magazines In-Place": {
+            "Category": "I. Item Swapping",
+            "DispName": "原位装弹匣", //Reload Magazines In-Place
+            "Description": "当用弹匣重新装填武器时，如果有必要（和可能），与新弹匣交换位置。" //When reloading a weapon with a magazine, swap locations with the new magazine if necessary (and possible)
+        },
+        "Always Reload Magazines In-Place": {
+            "Category": "I. Item Swapping",
+            "DispName": "总是原地重新装弹匣", //Always Reload Magazines In-Place
+            "Description": "一定要在适当的地方重新装弹匣，即使有空间不这样做。请注意，原地重新加载速度较慢。" //Always reload magazines in-place, even if there's space not to. Note that in-place reloads are slower.
+        },
+        "Swap with Incompatible Containers": {
+            "Category": "I. Item Swapping",
+            "DispName": "与不兼容的容器交换", //Swap with Incompatible Containers
+            "Description": "启用与由于大小或过滤器限制而无法容纳该项的容器交换项。在突袭中禁用以避免代价高昂的错误。" //Enable swapping items with containers that could never fit that item due to size or filter restrictions. Disabled in raid to avoid costly mistakes.
+        },
+        //J. Item Stacking
+        "Always Move Entire Stacks": {
+            "Category": "J. Item Stacking",
+            "DispName": "总是移动整个堆栈", //Always Move Entire Stacks
+            "Description": "当移动到包含部分堆栈的容器中时，这将填满该堆栈并尝试将剩余的堆栈移动到一个开放的位置（或另一个堆栈），而不是将其留下。" //When moving into a container that contains a partial stack, this will top up that stack and try to move the remainder into an open spot (or another stack), instead of leaving it behind.
+        },
+        "Combine Stacks Before Sorting": {
+            "Category": "J. Item Stacking",
+            "DispName": "排序前合并堆栈", //Combine Stacks Before Sorting
+            "Description": "在对容器进行排序时，首先组合相同类型的堆栈。如果排序失败，这将无法撤消。" //When sorting containers, first combine stacks of the same type. This will not be undone if the sorting fails.
+        },
+        "Autostack Ammo with FiR Ammo": {
+            "Category": "J. Item Stacking",
+            "DispName": "自动堆叠弹药与FiR弹药", //Autostack Ammo with FiR Ammo
+            "Description": "允许在Raid中发现的弹药与其他弹药自动堆叠，使容器交互更容易" //Allows automatic stacking of Found In Raid ammo with other ammo, making container interaction easier
+        },
+        "Autostack Items with FiR Items": {
+            "Category": "J. Item Stacking",
+            "DispName": "自动堆叠项目与FiR项目", //Autostack Items with FiR Items
+            "Description": "允许自动堆叠在Raid中发现的物品与其他物品，使容器交互更容易" //Allows automatic stacking of Found In Raid items with other items, making container interaction easier
+        },
+        //K. Containers
+        "Allow Adding to Unsearched Containers": {
+            "Category": "K. Containers",
+            "DispName": "允许添加到未搜索的容器", //Allow Adding to Unsearched Containers
+            "Description": "允许将物品放入未经搜查的容器中" //Allow items to be placed into unsearched containers
+        },
+        "Standardize Grid Order": {
+            "Category": "K. Containers",
+            "DispName": "规范网格顺序", //Standardize Grid Order
+            "Description": "改变装备/背包中网格的内部顺序，从左到右，从上到下" //Change internal ordering of grids in rigs/backpacks to be left to right, top to bottom
+        },
+        "Prioritize Smaller Slots (requires restart)": {
+            "Category": "K. Containers",
+            "DispName": "优先考虑较小的插槽（需要重启）", //Prioritize Smaller Slots (requires restart)
+            "Description": "当向有多个槽的容器中添加物品时，将物品放在能够容纳它的最小槽中，而不是只放在第一个空槽中。要求标准化网格顺序。" //When adding items to containers with multiple slots, place the item in the smallest slot that can hold it, rather than just the first empty space. Requires Standardize Grid Order.
+        },
+        "Open All Context Flyout": {
+            "Category": "K. Containers",
+            "DispName": "打开所有上下文弹出框", //Open All Context Flyout
+            "Description": "向“打开”上下文菜单添加一个弹出框，以递归地打开容器堆栈" //Add a flyout to the Open context menu to recursively open a stack of containers
+        },
+        "Prioritize Tags Over Names": {
+            "Category": "K. Containers",
+            "DispName": "标签优先于名称", //Prioritize Tags Over Names
+            "Description": "当没有足够的空间同时显示标签和项目名称时，请显示标签" //When there isn't enough space to show both the tag and the name of an item, show the tag
+        },
+        "Tag Backpacks (requires restart)": {
+            "Category": "K. Containers",
+            "DispName": "标签背包（需要重启）", //Tag Backpacks (requires restart)
+            "Description": "允许向背包添加标签。由于某些原因，必须重新启动游戏客户端才能使更改生效。" //Enabling adding tags to backpacks. For reasons, the game client must be restarted for changes to take effect.
+        },
+        "Tag Vests (requires restart)": {
+            "Category": "K. Containers",
+            "DispName": "标签背心（需要重启）", //Tag Vests (requires restart)
+            "Description": "启用向背心添加标签。由于某些原因，必须重新启动游戏客户端才能使更改生效。" //Enable adding tags to vests. For reasons, the game client must be restarted for changes to take effect.
+        },
+        //L. Inspect Windows
+        "Show Total Stats on Mods": {
+            "Category": "L. Inspect Windows",
+            "DispName": "显示mod的总统计", //Show Total Stats on Mods
+            "Description": "项目模块将显示包含附加到它们的模块的统计数据（您也可以从模块的检查窗口控制这一点）" //Item mods will show stats that include mods attached to them (you can also control this from a mod's inspect window)
+        },
+        "Highlight Compatible Slots": {
+            "Category": "L. Inspect Windows",
+            "DispName": "突出显示兼容槽位", //Highlight Compatible Slots
+            "Description": "除了兼容组件的默认行为为绿色阴影外，可以接受mod的空槽将具有绿色边框" //In addition to the default behavior of compatible components shading green, empty slots that can accept the mod will have a green border
+        },
+        "Remember Window Size": {
+            "Category": "L. Inspect Windows",
+            "DispName": "记住窗口大小", //Remember Window Size
+            "Description": "当你调整检查窗口的大小时，保存它的大小" //Save the size of the inspect window when you resize it
+        },
+        "Lock Inspect Preview Size": {
+            "Category": "L. Inspect Windows",
+            "DispName": "锁定检查预览大小", //Lock Inspect Preview Size
+            "Description": "当您调整检查窗口的大小时，请防止3D预览变大" //Keep the 3D preview from growing when you resize inspect windows
+        },
+        "Auto-expand to Fit Description": {
+            "Category": "L. Inspect Windows",
+            "DispName": "自动展开以适合描述", //Auto-expand to Fit Description
+            "Description": "自动拉伸检查窗口，以适应尽可能多的描述" //Automatically stretch the inspect window to fit as much of the description as possible
+        },
+        "Snap Window Left shortcut": {
+            "Category": "L. Inspect Windows",
+            "DispName": "捕捉窗口左快捷键", //Snap Window Left shortcut
+            "Description": "键绑定将检查面板固定在屏幕的左半部分" //Keybind to snap the inspect panel to the left half of the screen
+        },
+        "Snap Window Right shortcut": {
+            "Category": "L. Inspect Windows",
+            "DispName": "捕获窗口右快捷键", //Snap Window Right shortcut
+            "Description": "键绑定将检查面板固定在屏幕的右半部分" //Keybind to snap the inspect panel to the right half of the screen
+        },
+        "Style Attribute Panels": {
+            "Category": "L. Inspect Windows",
+            "DispName": "样式属性面板", //Style Attribute Panels
+            "Description": "清理和上色的项目状态" //Clean up and colorize item stats
+        },
+        "Add Left/Right Buttons on Containers": {
+            "Category": "L. Inspect Windows",
+            "DispName": "在容器上添加左/右按钮", //Add Left/Right Buttons on Containers
+            "Description": "为容器窗口添加左对齐和右对齐按钮" //Adds snap left and snap right buttons to container windows too
+        },
+        //M. Stash
+        "Synchronize Stash Scroll Position": {
+            "Category": "M. Stash",
+            "DispName": "同步隐藏卷轴位置", //Synchronize Stash Scroll Position
+            "Description": "记住你的卷轴的位置，你看到你的藏匿-库存，交易屏幕，邮件屏幕等。" //Remember your scroll position all the places you see your stash - inventory, trading screen, mail screen, etc.
+        },
+        "Auto-open Sorting Table": {
+            "Category": "M. Stash",
+            "DispName": "自动打开排序表", //Auto-open Sorting Table
+            "Description": "自动打开排序表，如果它是关闭的，当你shift-click一个项目。此选项和启用多选不能同时使用。" //Automatically open the sorting table if it's closed when you shift-click an item. This and Enable Multiselect cannot be used together.
+        },
+        "Show GP Coins in Currency": {
+            "Category": "M. Stash",
+            "DispName": "在货币中显示GP硬币", //Show GP Coins in Currency
+            "Description": "在你的货币显示的地方显示你的GP硬币" //Show your GP coins wherever your currency is displayed
+        },
+        //N. Trading
+        "Autoswitch Buy/Sell when Trading": {
+            "Category": "N. Trading",
+            "DispName": "交易时自动切换买入/卖出", //Autoswitch Buy/Sell when Trading
+            "Description": "点击一个商人的物品，切换到购买模式。ctrl -点击你的项目，切换到销售模式。" //Click a trader's item, switch to buy mode. Control-click your item, switch to sell mode.
+        },
+        "Show Out of Stock Toggle": {
+            "Category": "N. Trading",
+            "DispName": "显示缺货开关", //Show Out of Stock Toggle
+            "Description": "是否在交易屏幕上显示“缺货”按钮" //Whether the show the Out of Stock toggle on the trading screen
+        },
+        "Purchase Dialog ALL Shortcut": {
+            "Category": "N. Trading",
+            "DispName": "购买对话框", //Purchase Dialog ALL Shortcut
+            "Description": "在物品购买对话框中将数量设置为全部。相当于单击ALL按钮。" //Keybind to set the quantity to all in the item purchase dialog. Equivalent to clicking the ALL button.
+        },
+        //O. Flea Market
+        "Show Filter Back Button": {
+            "Category": "O. Flea Market",
+            "DispName": "显示过滤器返回按钮", //Show Filter Back Button
+            "Description": "保留跳蚤市场搜索和过滤的历史记录，并显示返回按钮来导航它" //Keep a history of flea market searches and filters, and show a back button to navigate it
+        },
+        "Show Barter Icons": {
+            "Category": "O. Flea Market",
+            "DispName": "显示物物交换图标", //Show Barter Icons
+            "Description": "显示物品图标，而不是一般的物品图标" //Show item icons for barters instead of the generic barter icon
+        },
+        "Enable Linked Slot Search": {
+            "Category": "O. Flea Market",
+            "DispName": "启用链接槽位搜索", //Enable Linked Slot Search
+            "Description": "添加一个上下文菜单到空的mod槽，并允许链接搜索特定的槽" //Add a context menu to empty mod slots and allow linked searches for specifically that slot
+        },
+        "Show Required Quest for Locked Offers": {
+            "Category": "O. Flea Market",
+            "DispName": "显示锁定报价所需的任务", //Show Required Quest for Locked Offers
+            "Description": "对于在任务完成后被锁定的交易物品，在工具提示中添加任务名称" //For trader items locked behind quest completion, add the name of the quest to the tooltip
+        },
+        "Auto-expand Categories": {
+            "Category": "O. Flea Market",
+            "DispName": "Auto-expand类别", //Auto-expand Categories
+            "Description": "如果没有滚动，搜索将在左侧面板中自动展开类别" //Searches will auto-expand categories in the left panel if there is room wtihout scrolling
+        },
+        "Clear Filters on Search": {
+            "Category": "O. Flea Market",
+            "DispName": "清除搜索过滤", //Clear Filters on Search
+            "Description": "在跳蚤搜索栏输入后按Enter键将清除非默认过滤器" //Pressing Enter after typing in the flea search bar will clear non-default filters
+        },
+        //P. Add Offer
+        "Autopopulate Offer Price": {
+            "Category": "P. Add Offer",
+            "DispName": "自动人口报价", //Autopopulate Offer Price
+            "Description": "自动选择新的报价与最小/平均/最大市场价格，或留空" //Autopopulte new offers with min/avg/max market price, or leave blank
+        },
+        "Update Offer Price on Bulk": {
+            "Category": "P. Add Offer",
+            "DispName": "更新批量报价", //Update Offer Price on Bulk
+            "Description": "自动乘或除价格，当你选择/取消散装，或当你改变所选项目的数量，而散装被选中。" //Automatically multiply or divide the price when you check/uncheck bulk, or or when you change the number of selected items while bulk is checked.
+        },
+        "Keep Add Offer Window Open": {
+            "Category": "P. Add Offer",
+            "DispName": "保持添加报价窗口打开", //Keep Add Offer Window Open
+            "Description": "在您发出报价后不要关闭“添加报价”窗口。请注意，如果您在最大报价，窗口仍将关闭。" //Don't close the Add Offer window after you place an offer. Note that the window will still close if you are at max offers.
+        },
+        "Keep Add Offer Window Open: Ignore Max Offers": {
+            "Category": "P. Add Offer",
+            "DispName": "保持添加报价窗口打开：忽略最大报价", //Keep Add Offer Window Open: Ignore Max Offers
+            "Description": "特别是对于保持添加报价窗口打开，这个设置将保持窗口打开，即使你在最大报价。" //Specifically for the Keep Add Offers Window Open, this setting will keep the window open even if you're at max offers.
+        },
+        "Remember Add Offer Autoselect Similar": {
+            "Category": "P. Add Offer",
+            "DispName": "记得添加报价自动选择类似", //Remember Add Offer Autoselect Similar
+            "Description": "记住“添加报价”窗口中“自动选择类似”复选框的状态" //Remember the state of the Autoselect Similar checkbox in the Add Offer window
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "武器预设确认选项": {
+            "Never": "Never",
+            "OnClose": "OnClose",
+            "Always": "Always"
+        },
+        "转帐确认选项": {
+            "Never": "Never",
+            "Always": "Always"
+        },
+        "Mod突袭武器": {
+            "Never": "Never",
+            "WithTool": "WithTool",
+            "Always": "Always"
+        },
+        "战术绑定修改器": {
+            "Shift": "Shift",
+            "Control": "Control",
+            "Alt": "Alt"
+        },
+        "多选择策略": {
+            "FirstOpenSpace": "FirstOpenSpace",
+            "SameRowOrLower": "SameRowOrLower",
+            "OriginalSpacing": "OriginalSpacing"
+        },
+        "汽车旧货价格": {
+            "None": "None",
+            "Minimum": "Minimum",
+            "Average": "Average",
+            "Maximum": "Maximum"
+        }
+    }
+}

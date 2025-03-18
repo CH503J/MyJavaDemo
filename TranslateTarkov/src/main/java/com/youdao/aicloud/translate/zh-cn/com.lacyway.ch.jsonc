@@ -1,0 +1,25 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "ContinuousHealing"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        "Heal Limbs": {
+            "Category": "1. Settings",
+            "DispName": "Heal Limbs", //Heal Limbs
+            "Description": "NOTE: Animation does not loop." //NOTE: Animation does not loop.
+        },
+        "Heal Delay": {
+            "Category": "1. Settings",
+            "DispName": "Heal Delay", //Heal Delay
+            "Description": "每个肢体每次治疗之间的延迟。Game default （游戏默认值） 为 2，设置为 0 以使用预期的 Continuous Healing （持续修复） 行为。" //The delay between every heal on each limb. Game default is 2, set to 0 to use intended Continuous Healing behavior.
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

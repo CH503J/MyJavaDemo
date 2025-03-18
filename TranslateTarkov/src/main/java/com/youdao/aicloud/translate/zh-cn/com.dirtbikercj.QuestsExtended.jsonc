@@ -1,0 +1,35 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "Quests Extended任务扩展"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //Development
+        "Dump Quest Zones": {
+            "Category": "Development",
+            "DispName": "转储任务区域", //Dump Quest Zones
+            "Description": "需要加载到每个地图，将它们记录到Bepinex输出。" //Requires loading into each map to log them to the Bepinex output.
+        },
+        //Progress Notifications
+        "Enable Notifications": {
+            "Category": "进度通知",
+            "DispName": "启用通知" //Enable Notifications
+        },
+        "Duration of popup": {
+            "Category": "进度通知",
+            "DispName": "弹出窗口持续时间" //Duration of popup
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "ENotificationDurationType": {
+            "默认": "默认",
+            "长": "长",
+            "无限": "无限"
+        }
+    }
+}

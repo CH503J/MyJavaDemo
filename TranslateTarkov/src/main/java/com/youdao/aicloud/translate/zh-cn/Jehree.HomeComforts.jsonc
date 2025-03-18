@@ -1,0 +1,99 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "HomeComforts"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //0: Advanced
+        "Exfil Area Size Multiplier": {
+            "Category": "0: Advanced",
+            "DispName": "Exfil Area Size Multiplier", //Exfil Area Size Multiplier
+            "Description": "Size of exfil trigger." //Size of exfil trigger.
+        },
+        //1: Safehouse
+        "Always Infil at Safehouse": {
+            "Category": "1: Safehouse",
+            "DispName": "Always Infil at Safehouse", //Always Infil at Safehouse
+            "Description": "true = always infil at the last enabled safehouse you exfil'd at. false = only infil at a safehouse if you exfil'd at it in the last raid you played on that map." //true = always infil at the last enabled safehouse you exfil'd at. false = only infil at a safehouse if you exfil'd at it in the last raid you played on that map.
+        },
+        "Player Scavs can use Safehouse Marker Radio": {
+            "Category": "1: Safehouse",
+            "DispName": "Player Scavs can use Safehouse Marker Radio", //Player Scavs can use Safehouse Marker Radio
+            "Description": "If safehouses can be used while on a scav raid." //If safehouses can be used while on a scav raid.
+        },
+        //2: Space Heater
+        "Space Heater AOE Size Multiplier": {
+            "Category": "2: Space Heater",
+            "DispName": "Space Heater AOE Size Multiplier", //Space Heater AOE Size Multiplier
+            "Description": "Size multiplier for Space Heater area of affect zone. Requires raid restart to fully take affect." //Size multiplier for Space Heater area of affect zone. Requires raid restart to fully take affect.
+        },
+        "Hydration Buff": {
+            "Category": "2: Space Heater",
+            "DispName": "Hydration Buff", //Hydration Buff
+            "Description": "Hydration buff (per minute) while near a space heater." //Hydration buff (per minute) while near a space heater.
+        },
+        "Energy Buff": {
+            "Category": "2: Space Heater",
+            "DispName": "Energy Buff", //Energy Buff
+            "Description": "Energy buff (per minute) while near a space heater." //Energy buff (per minute) while near a space heater.
+        },
+        //9: Number of Safehouses per Map
+        "Customs": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Customs", //Customs
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Factory": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Factory", //Factory
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Interchange": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Interchange", //Interchange
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Lab": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Lab", //Lab
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Lighthouse": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Lighthouse", //Lighthouse
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Reserve": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Reserve", //Reserve
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Ground Zero": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Ground Zero", //Ground Zero
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Shoreline": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Shoreline", //Shoreline
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Streets": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Streets", //Streets
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        },
+        "Woods": {
+            "Category": "9: Number of Safehouses per Map",
+            "DispName": "Woods", //Woods
+            "Description": "Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues." //Maximum number of safehouses allowed to be placed on a map. It is HIGHLY recommended to leave this number set to something quite small to avoid balance issues.
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

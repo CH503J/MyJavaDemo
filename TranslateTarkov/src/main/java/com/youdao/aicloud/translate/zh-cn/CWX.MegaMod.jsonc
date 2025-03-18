@@ -1,0 +1,133 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "CWX-MegaMod"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //1- All Mods
+        "ReserveAlarmChanger - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "预留警报更换器 - On/Off", //ReserveAlarmChanger - On/Off
+            "Description": "启用预留警报转换器 - 将警报声音更改为插件文件夹中的文件（仅在 RAID 启动时运行）" //Enable Reserve Alarm Changer - changes alarm sound to file on plugin folder (ONLY RUNS ON RAID START)
+        },
+        "BushWhacker - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "BushWhacker - On/Off", //BushWhacker - On/Off
+            "Description": "启用 BushWhacker - 消除灌木丛的减速" //Enable BushWhacker - removes slowdown from bushes
+        },
+        "GrassCutter - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "割草机 - On/Off", //GrassCutter - On/Off
+            "Description": "启用 割草机 - 去除草" //Enable GrassCutter - removes grass
+        },
+        "MasterKey - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "万能钥匙 - On/Off", //MasterKey - On/Off
+            "Description": "启用 万能钥匙 - 将门更改为使用 MasterKeyToUse" //Enable MasterKey - Changes Doors to use MasterKeyToUse
+        },
+        "EnvironmentEnjoyer - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "环境享受者 - On/Off", //EnvironmentEnjoyer - On/Off
+            "Description": "Enable EnvironmentEnjoyer - 禁用树木和灌木丛" //Enable EnvironmentEnjoyer - Disables trees and bushes
+        },
+        "SpaceUser - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "空间用户 - On/Off", //SpaceUser - On/Off
+            "Description": "启用 SpaceUser - 能够使用空格键接受 fle 和拆分堆栈" //Enable SpaceUser - Able to use spacebar to accept flea and split stacks
+        },
+        "TradingPlayerView - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "交易玩家视图 - On/Off", //TradingPlayerView - On/Off
+            "Description": "启用 TradingPlayerView - 更改交易玩家视图" //Enable TradingPlayerView - Changes trading player view
+        },
+        "PainkillerDesat - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "止痛药效果 - On/Off", //PainkillerDesat - On/Off
+            "Description": "Enable PainkillerDesat - 消除服用止痛药的效果" //Enable PainkillerDesat - Removes effects from taking painkillers
+        },
+        "WeatherDebugMode - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "天气调试模式 - On/Off", //WeatherDebugMode - On/Off
+            "Description": "Enable WeatherDebugMode - 使天气超级晴朗" //Enable WeatherDebugMode - Makes it super sunny
+        },
+        "FogRemover - On/Off": {
+            "Category": "1- All Mods",
+            "DispName": "除雾剂 - On/Off", //FogRemover - On/Off
+            "Description": "Enable FogRemover - 移除雾" //Enable FogRemover - Removes fog
+        },
+        //2- Debug Mods
+        "BotMonitor - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "机器人监控器 - On/Off", //BotMonitor - On/Off
+            "Description": "启用 BotMonitor - 为 Bot Monitoring 添加自定义 GUI" //Enable BotMonitor - Adds a custom gui for Bot Monitoring
+        },
+        "InventoryViewer - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "清单查看器 - On/Off", //InventoryViewer - On/Off
+            "Description": "启用 InventoryViewer - 更改清单视图以显示或不显示所有容器" //Enable InventoryViewer - Changes inventory view to show all containers or not
+        },
+        "GodMode - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "上帝模式 - On/Off", //GodMode - On/Off
+            "Description": "Enable GodMode - 无法被杀死" //Enable GodMode - Unable to be killed
+        },
+        "CameraShake - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "相机抖动 - On/Off", //CameraShake - On/Off
+            "Description": "Disable CameraShake - 移除相机抖动" //Disable CameraShake - Removes CameraShake
+        },
+        "ThermalMode - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "热成像模式 - On/Off", //ThermalMode - On/Off
+            "Description": "Enable ThermalMode - 启用 热成像" //Enable ThermalMode - Enables ThermalMode
+        },
+        "BetterThermalMode - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "更好的热成像模式 - On/Off", //BetterThermalMode - On/Off
+            "Description": "Enable BetterThermalMode - 禁用热成像的模糊/噪点/等" //Enable BetterThermalMode - Disables Blur/Noise/etc of the thermal
+        },
+        "NightVisionMode - On/Off": {
+            "Category": "2- Debug Mods",
+            "DispName": "夜视仪模式 - On/Off", //NightVisionMode - On/Off
+            "Description": "Enable NightVisionMode - 启用 夜视仪模式" //Enable NightVisionMode - Enables NightVisionMode
+        },
+        //3- MasterKey
+        "MasterKeyToUse": {
+            "Category": "3- MasterKey",
+            "DispName": "MasterKeyToUse", //MasterKeyToUse
+            "Description": "这将设置为所有可解锁的门" //This will be set to all unlockable doors
+        },
+        //4- BotMonitor
+        "BotMonitorValue": {
+            "Category": "4- BotMonitor",
+            "DispName": "机器人监控器 值", //BotMonitorValue
+            "Description": "这将设置为仅显示总计" //This will be set to only show total
+        },
+        "BotMonitorFontSize": {
+            "Category": "4- BotMonitor",
+            "DispName": "机器人监控器字体大小", //BotMonitorFontSize
+            "Description": "这显然会设置字体大小" //This sets the font size obviously
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "EMasterKeys": {
+            "黄卡": "黄卡",
+            "绿卡": "绿卡",
+            "蓝卡": "蓝卡",
+            "红卡": "红卡",
+            "Violet": "Violet",
+            "黑卡": "黑卡"
+        },
+        "EMonitorMode": {
+            "Total": "Total",
+            "PerZoneTotal": "PerZoneTotal",
+            "PerZoneTotalWithList": "PerZoneTotalWithList",
+            "PerZoneTotalWithListAndDelayedSpawn": "PerZoneTotalWithListAndDelayedSpawn"
+        }
+    }
+}

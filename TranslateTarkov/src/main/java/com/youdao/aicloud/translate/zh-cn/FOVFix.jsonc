@@ -1,0 +1,241 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "FOVFix"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //.0. Testing
+        "test 1": {
+            "Category": ".0. Testing",
+            "DispName": "test 1", //test 1
+            "Description": "Plugin GUID: FOVFix" //Plugin GUID: FOVFix
+        },
+        "test 2": {
+            "Category": ".0. Testing",
+            "DispName": "test 2" //test 2
+        },
+        "test 3": {
+            "Category": ".0. Testing",
+            "DispName": "test 3" //test 3
+        },
+        "test 4": {
+            "Category": ".0. Testing",
+            "DispName": "test 4" //test 4
+        },
+        //1. Player Camera ADS FOV
+        "Optic FOV Multi": {
+            "Category": "1. Player Camera ADS FOV",
+            "DispName": "Optic FOV Multi", //Optic FOV Multi
+            "Description": "Lower Multi = Lower FOV So More Zoom." //Lower Multi = Lower FOV So More Zoom.
+        },
+        "Unmagnified Sight FOV Multi": {
+            "Category": "1. Player Camera ADS FOV",
+            "DispName": "Unmagnified Sight FOV Multi", //Unmagnified Sight FOV Multi
+            "Description": "Lower Multi = Lower FOV So More Zoom." //Lower Multi = Lower FOV So More Zoom.
+        },
+        //2. ADS Player Camera Position
+        "Increase Camera Offset Key": {
+            "Category": "2. ADS Player Camera Position",
+            "DispName": "Increase Camera Offset Key" //Increase Camera Offset Key
+        },
+        "Decrease Camera Offset Key": {
+            "Category": "2. ADS Player Camera Position",
+            "DispName": "Decrease Camera Offset Key" //Decrease Camera Offset Key
+        },
+        "Optic Camera Distance Offset": {
+            "Category": "2. ADS Player Camera Position",
+            "DispName": "Optic Camera Distance Offset", //Optic Camera Distance Offset
+            "Description": "Distance Of The Camera To Optics When ADSed. Lower = Closer To Optic." //Distance Of The Camera To Optics When ADSed. Lower = Closer To Optic.
+        },
+        "Non-Optic Camera Distance Offset": {
+            "Category": "2. ADS Player Camera Position",
+            "DispName": "Non-Optic Camera Distance Offset", //Non-Optic Camera Distance Offset
+            "Description": "Distance Of The Camera To Sights When ADSed. Lower = Closer To Optic." //Distance Of The Camera To Sights When ADSed. Lower = Closer To Optic.
+        },
+        "Pistol Camera Distance Offset": {
+            "Category": "2. ADS Player Camera Position",
+            "DispName": "Pistol Camera Distance Offset", //Pistol Camera Distance Offset
+            "Description": "Distance Of The Camera To Sights When ADSed. Lower = Closer To Optic." //Distance Of The Camera To Sights When ADSed. Lower = Closer To Optic.
+        },
+        "Left Shoulder Offset": {
+            "Category": "2. ADS Player Camera Position",
+            "DispName": "Left Shoulder Offset", //Left Shoulder Offset
+            "Description": "Distance Of The Camera To Sights When ADSed. Lower = Closer To Optic. Set Till Left Shoulder Offset Matches Right Shoulder, Will Depend On Your Set Up. Does Not Apply If Realism Stances Are Enabled." //Distance Of The Camera To Sights When ADSed. Lower = Closer To Optic. Set Till Left Shoulder Offset Matches Right Shoulder, Will Depend On Your Set Up. Does Not Apply If Realism Stances Are Enabled.
+        },
+        //3. Toggleable Zoom
+        "Zoom Toggle": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Zoom Toggle", //Zoom Toggle
+            "Description": "Toggle To Zoom." //Toggle To Zoom.
+        },
+        "Hold To Zoom": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Hold To Zoom", //Hold To Zoom
+            "Description": "Change Zoom To A Hold Keybind." //Change Zoom To A Hold Keybind.
+        },
+        "Enable Toggle Zoom On Hold-Breath": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Enable Toggle Zoom On Hold-Breath", //Enable Toggle Zoom On Hold-Breath
+            "Description": "Toggle Zoom Will Activated When Holding Breath Only." //Toggle Zoom Will Activated When Holding Breath Only.
+        },
+        "Optics Toggle FOV Multi": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Optics Toggle FOV Multi", //Optics Toggle FOV Multi
+            "Description": "FOV Multiplier When Aiming With Optic." //FOV Multiplier When Aiming With Optic.
+        },
+        "Non-Optics Toggle FOV Multi": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Non-Optics Toggle FOV Multi", //Non-Optics Toggle FOV Multi
+            "Description": "FOV Multiplier When Aiming with Non-Optic Or Not Aiming." //FOV Multiplier When Aiming with Non-Optic Or Not Aiming.
+        },
+        "Un-Aimed Toggle FOV Multi": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Un-Aimed Toggle FOV Multi", //Un-Aimed Toggle FOV Multi
+            "Description": "FOV Multiplier When Aiming with Non-Optic Or Not Aiming." //FOV Multiplier When Aiming with Non-Optic Or Not Aiming.
+        },
+        "Non-Optics Toggle Zoom Sens Multi": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Non-Optics Toggle Zoom Sens Multi", //Non-Optics Toggle Zoom Sens Multi
+            "Description": "Sens Modifier When Zoom Is Toggled." //Sens Modifier When Zoom Is Toggled.
+        },
+        "Un-Aimed Toggle Zoom Sens Multi": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Un-Aimed Toggle Zoom Sens Multi", //Un-Aimed Toggle Zoom Sens Multi
+            "Description": "Sens Modifier When Zoom Is Toggled." //Sens Modifier When Zoom Is Toggled.
+        },
+        "Optics Toggle Zoom Sens Multi": {
+            "Category": "3. Toggleable Zoom",
+            "DispName": "Optics Toggle Zoom Sens Multi", //Optics Toggle Zoom Sens Multi
+            "Description": "Sens Modifier When Zoom Toggled." //Sens Modifier When Zoom Toggled.
+        },
+        //4. Mouse Sensitivity.
+        "Change Mouse Sensitivity": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "Change Mouse Sensitivity", //Change Mouse Sensitivity
+            "Description": "Sets Mouse Sensitivity Based On The Scope's Current Magnificaiton. Non-Optical Sights Are Treated The Same As 1x." //Sets Mouse Sensitivity Based On The Scope's Current Magnificaiton. Non-Optical Sights Are Treated The Same As 1x.
+        },
+        "Unmagnified Sight Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "Unmagnified Sight Sens Multi" //Unmagnified Sight Sens Multi
+        },
+        "1x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "1x Sens Multi" //1x Sens Multi
+        },
+        "2x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "2x Sens Multi" //2x Sens Multi
+        },
+        "3x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "3x Sens Multi" //3x Sens Multi
+        },
+        "4x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "4x Sens Multi" //4x Sens Multi
+        },
+        "5x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "5x Sens Multi" //5x Sens Multi
+        },
+        "6x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "6x Sens Multi" //6x Sens Multi
+        },
+        "8x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "8x Sens Multi" //8x Sens Multi
+        },
+        "10x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "10x Sens Multi" //10x Sens Multi
+        },
+        "12x Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "12x Sens Multi" //12x Sens Multi
+        },
+        "High Sens Multi": {
+            "Category": "4. Mouse Sensitivity.",
+            "DispName": "High Sens Multi" //High Sens Multi
+        },
+        //5. Camera Speed.
+        "Rfile Camera Speed": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Rfile Camera Speed", //Rfile Camera Speed
+            "Description": "Global Multi For The Speed Of ADS Camera Transitions For Rifles Without Optics. A Low Value Can Be Used To Smoothen Out The Overly Snappy Transitions Some Scope And Weapon Combinations Can Have At High FOV." //Global Multi For The Speed Of ADS Camera Transitions For Rifles Without Optics. A Low Value Can Be Used To Smoothen Out The Overly Snappy Transitions Some Scope And Weapon Combinations Can Have At High FOV.
+        },
+        "Pistol Camera Speed": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Pistol Camera Speed", //Pistol Camera Speed
+            "Description": "Global Multi For The Speed Of ADS Camera Transitions For Pistols. A Low Value Can Be Used To Smoothen Out The Overly Snappy Transitions Some Weapons Can Have At High FOV." //Global Multi For The Speed Of ADS Camera Transitions For Pistols. A Low Value Can Be Used To Smoothen Out The Overly Snappy Transitions Some Weapons Can Have At High FOV.
+        },
+        "Optic Camera Speed": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Optic Camera Speed", //Optic Camera Speed
+            "Description": "Global Multi For The Speed Of ADS Camera Transitions For Rifels With Optics. A Low Value Can Be Used To Smoothen Out The Overly Snappy Transitions Some Scope And Weapon Combinations Can Have At High FOV." //Global Multi For The Speed Of ADS Camera Transitions For Rifels With Optics. A Low Value Can Be Used To Smoothen Out The Overly Snappy Transitions Some Scope And Weapon Combinations Can Have At High FOV.
+        },
+        "Camera Aim Speed X-Axis": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Camera Aim Speed X-Axis", //Camera Aim Speed X-Axis
+            "Description": "The Speed Of The Player Camera When Aiming For The X-Axis Specifically" //The Speed Of The Player Camera When Aiming For The X-Axis Specifically
+        },
+        "Camera Un-Aim Speed X-Axis": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Camera Un-Aim Speed X-Axis", //Camera Un-Aim Speed X-Axis
+            "Description": "The Speed Of The Player Camera When Un-Aiming For The X-Axis Specifically" //The Speed Of The Player Camera When Un-Aiming For The X-Axis Specifically
+        },
+        "Camera Aim Speed Y-Axis": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Camera Aim Speed Y-Axis", //Camera Aim Speed Y-Axis
+            "Description": "The Speed Of The Player Camera When Aiming For The Y-Axis Specifically" //The Speed Of The Player Camera When Aiming For The Y-Axis Specifically
+        },
+        "Camera Un-Aim Speed Y-Axis": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Camera Un-Aim Speed Y-Axis", //Camera Un-Aim Speed Y-Axis
+            "Description": "The Speed Of The Player Camera When Un-Aiming For The Y-Axis Specifically" //The Speed Of The Player Camera When Un-Aiming For The Y-Axis Specifically
+        },
+        "Camera Aim Speed Z-Axis": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Camera Aim Speed Z-Axis", //Camera Aim Speed Z-Axis
+            "Description": "The Speed Of The Player Camera When Aiming For The Z-Axis Specifically" //The Speed Of The Player Camera When Aiming For The Z-Axis Specifically
+        },
+        "Camera Un-Aim Speed Z-Axis": {
+            "Category": "5. Camera Speed.",
+            "DispName": "Camera Un-Aim Speed Z-Axis", //Camera Un-Aim Speed Z-Axis
+            "Description": "The Speed Of The Player Camera When Un-Aiming For The Z-Axis Specifically" //The Speed Of The Player Camera When Un-Aiming For The Z-Axis Specifically
+        },
+        //6. Misc.
+        "Hud FOV": {
+            "Category": "6. Misc.",
+            "DispName": "Hud FOV", //Hud FOV
+            "Description": "How Far Away The Player Camera Is From The Player's Arms And Weapon, Making Them Appear Closer/Larger Or Further Away/Smaller" //How Far Away The Player Camera Is From The Player's Arms And Weapon, Making Them Appear Closer/Larger Or Further Away/Smaller
+        },
+        "Enable FOV Scale Fix": {
+            "Category": "6. Misc.",
+            "DispName": "Enable FOV Scale Fix", //Enable FOV Scale Fix
+            "Description": "Requires Game Restart. Lower Value = More Distortion." //Requires Game Restart. Lower Value = More Distortion.
+        },
+        "FOV Scale": {
+            "Category": "6. Misc.",
+            "DispName": "FOV Scale", //FOV Scale
+            "Description": "Requires Game Restart. A Value Of One Reduces The Distortion Caused By Higher FOV Settings, Significantly Reducing Issues With Laser Misallignment And Optics Recoil. Does Make Weapon Postion And Scale Look Different." //Requires Game Restart. A Value Of One Reduces The Distortion Caused By Higher FOV Settings, Significantly Reducing Issues With Laser Misallignment And Optics Recoil. Does Make Weapon Postion And Scale Look Different.
+        },
+        "Max Base FOV": {
+            "Category": "6. Misc.",
+            "DispName": "Max Base FOV", //Max Base FOV
+            "Description": "Max Selectable Main Camera FOV In Game Settings." //Max Selectable Main Camera FOV In Game Settings.
+        },
+        "Min Base FOV": {
+            "Category": "6. Misc.",
+            "DispName": "Min Base FOV", //Min Base FOV
+            "Description": "Min Selectable Main Camera FOVIn Game Settings." //Min Selectable Main Camera FOVIn Game Settings.
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

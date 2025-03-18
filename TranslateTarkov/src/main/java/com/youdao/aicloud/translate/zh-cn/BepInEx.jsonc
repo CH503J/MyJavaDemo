@@ -1,0 +1,160 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "UnknownPlugin"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //Caching
+        "EnableAssemblyCache": {
+            "Category": "Caching",
+            "DispName": "EnableAssemblyCache", //EnableAssemblyCache
+            "Description": "Enabling this will speed up discovery of plugins and patchers by caching the metadata of all types BepInEx discovers." //Enabling this will speed up discovery of plugins and patchers by caching the metadata of all types BepInEx discovers.
+        },
+        //Chainloader
+        "HideManagerGameObject": {
+            "Category": "Chainloader",
+            "DispName": "HideManagerGameObject" //HideManagerGameObject
+        },
+        //Harmony.Logger
+        "LogChannels": {
+            "Category": "Harmony.Logger",
+            "DispName": "LogChannels", //LogChannels
+            "Description": "NOTE: IL channel dumps the whole patch methods, use only when needed!" //NOTE: IL channel dumps the whole patch methods, use only when needed!
+        },
+        //Logging
+        "UnityLogListening": {
+            "Category": "Logging",
+            "DispName": "UnityLogListening", //UnityLogListening
+            "Description": "Enables showing unity log messages in the BepInEx logging system." //Enables showing unity log messages in the BepInEx logging system.
+        },
+        "LogConsoleToUnityLog": {
+            "Category": "Logging",
+            "DispName": "LogConsoleToUnityLog" //LogConsoleToUnityLog
+        },
+        //Logging.Console
+        "[Logging.Console]Enabled": {
+            "Category": "Logging.Console",
+            "DispName": "Enabled", //Enabled
+            "Description": "Enables showing a console for log output." //Enables showing a console for log output.
+        },
+        "PreventClose": {
+            "Category": "Logging.Console",
+            "DispName": "PreventClose", //PreventClose
+            "Description": "If enabled, will prevent closing the console (either by deleting the close button or in other platform-specific way)." //If enabled, will prevent closing the console (either by deleting the close button or in other platform-specific way).
+        },
+        "ShiftJisEncoding": {
+            "Category": "Logging.Console",
+            "DispName": "ShiftJisEncoding", //ShiftJisEncoding
+            "Description": "If true, console is set to the Shift-JIS encoding, otherwise UTF-8 encoding." //If true, console is set to the Shift-JIS encoding, otherwise UTF-8 encoding.
+        },
+        "StandardOutType": {
+            "Category": "Logging.Console",
+            "DispName": "StandardOutType" //StandardOutType
+        },
+        "[Logging.Console]LogLevels": {
+            "Category": "Logging.Console",
+            "DispName": "LogLevels", //LogLevels
+            "Description": "Which log levels to show in the console output." //Which log levels to show in the console output.
+        },
+        //Logging.Disk
+        "WriteUnityLog": {
+            "Category": "Logging.Disk",
+            "DispName": "WriteUnityLog", //WriteUnityLog
+            "Description": "Include unity log messages in log file output." //Include unity log messages in log file output.
+        },
+        "AppendLog": {
+            "Category": "Logging.Disk",
+            "DispName": "AppendLog", //AppendLog
+            "Description": "Appends to the log file instead of overwriting, on game startup." //Appends to the log file instead of overwriting, on game startup.
+        },
+        "[Logging.Disk]Enabled": {
+            "Category": "Logging.Disk",
+            "DispName": "Enabled", //Enabled
+            "Description": "Enables writing log messages to disk." //Enables writing log messages to disk.
+        },
+        "[Logging.Disk]LogLevels": {
+            "Category": "Logging.Disk",
+            "DispName": "LogLevels", //LogLevels
+            "Description": "Which log leves are saved to the disk log output." //Which log leves are saved to the disk log output.
+        },
+        //Preloader
+        "ApplyRuntimePatches": {
+            "Category": "Preloader",
+            "DispName": "ApplyRuntimePatches", //ApplyRuntimePatches
+            "Description": "This should always be true, unless you cannot start the game due to a Harmony related issue (such as running .NET Standard runtime) or you know what you're doing." //This should always be true, unless you cannot start the game due to a Harmony related issue (such as running .NET Standard runtime) or you know what you're doing.
+        },
+        "HarmonyBackend": {
+            "Category": "Preloader",
+            "DispName": "HarmonyBackend", //HarmonyBackend
+            "Description": "This setting should only be used for development purposes (e.g. debugging in dnSpy). Other code might override this setting." //This setting should only be used for development purposes (e.g. debugging in dnSpy). Other code might override this setting.
+        },
+        "DumpAssemblies": {
+            "Category": "Preloader",
+            "DispName": "DumpAssemblies", //DumpAssemblies
+            "Description": "This can be used by developers to inspect and debug preloader patchers." //This can be used by developers to inspect and debug preloader patchers.
+        },
+        "LoadDumpedAssemblies": {
+            "Category": "Preloader",
+            "DispName": "LoadDumpedAssemblies", //LoadDumpedAssemblies
+            "Description": "If set to true, will override DumpAssemblies." //If set to true, will override DumpAssemblies.
+        },
+        "BreakBeforeLoadAssemblies": {
+            "Category": "Preloader",
+            "DispName": "BreakBeforeLoadAssemblies", //BreakBeforeLoadAssemblies
+            "Description": "This can be used with debuggers like dnSpy to install breakpoints into patched assemblies before they are loaded." //This can be used with debuggers like dnSpy to install breakpoints into patched assemblies before they are loaded.
+        },
+        //Preloader.Entrypoint
+        "Assembly": {
+            "Category": "Preloader.Entrypoint",
+            "DispName": "Assembly", //Assembly
+            "Description": "The local filename of the assembly to target." //The local filename of the assembly to target.
+        },
+        "Type": {
+            "Category": "Preloader.Entrypoint",
+            "DispName": "Type", //Type
+            "Description": "The name of the type in the entrypoint assembly to search for the entrypoint method." //The name of the type in the entrypoint assembly to search for the entrypoint method.
+        },
+        "Method": {
+            "Category": "Preloader.Entrypoint",
+            "DispName": "Method", //Method
+            "Description": "The name of the method in the specified entrypoint assembly and type to hook and load Chainloader from." //The name of the method in the specified entrypoint assembly and type to hook and load Chainloader from.
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "LogChannel": {
+            "None": "None",
+            "Info": "Info",
+            "IL": "IL",
+            "Warn": "Warn",
+            "Error": "Error",
+            "Debug": "Debug",
+            "All": "All"
+        },
+        "ConsoleOutRedirectType": {
+            "Auto": "Auto",
+            "ConsoleOut": "ConsoleOut",
+            "StandardOut": "StandardOut"
+        },
+        "LogLevel": {
+            "None": "None",
+            "Fatal": "Fatal",
+            "Error": "Error",
+            "Warning": "Warning",
+            "Message": "Message",
+            "Info": "Info",
+            "Debug": "Debug",
+            "All": "All"
+        },
+        "MonoModBackend": {
+            "auto": "auto",
+            "dynamicmethod": "dynamicmethod",
+            "methodbuilder": "methodbuilder",
+            "cecil": "cecil"
+        }
+    }
+}

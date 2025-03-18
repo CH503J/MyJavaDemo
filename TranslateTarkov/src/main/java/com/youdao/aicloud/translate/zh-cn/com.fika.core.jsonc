@@ -1,0 +1,749 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "Volcano汉化 Fika.Core Fika联机核心"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //1.网络
+        "本地套接字(Native Sockets)": {
+            "Category": "1.网络",
+            "DispName": "本地套接字(Native Sockets)", //本地套接字(Native Sockets)
+            "Description": "使用本地套接字进行游戏流量传输。这使用直接的套接字调用进行发送/接收，以显著提高速度并减少GC压力。仅适用于Windows。Linux可能无效" //使用本地套接字进行游戏流量传输。这使用直接的套接字调用进行发送/接收，以显著提高速度并减少GC压力。仅适用于Windows。Linux可能无效
+        },
+        "强制IP(Force IP)": {
+            "Category": "1.网络",
+            "DispName": "强制IP(Force IP)", //强制IP(Force IP)
+            "Description": "若使用radmin等虚拟局域网联机工具，请填写 创建战局的房主 所使用的IP(如果自己是房主就填写自己的)" //若使用radmin等虚拟局域网联机工具，请填写 创建战局的房主 所使用的IP(如果自己是房主就填写自己的)
+        },
+        "强制绑定IP(Force Bind IP)": {
+            "Category": "1.网络",
+            "DispName": "强制绑定IP(Force Bind IP)", //强制绑定IP(Force Bind IP)
+            "Description": "若使用radmin等虚拟局域网联机工具，请填写 自己 联机所使用的IP" //若使用radmin等虚拟局域网联机工具，请填写 自己 联机所使用的IP
+        },
+        "服务器房间 刷新频率": {
+            "Category": "1.网络",
+            "DispName": "服务器房间 刷新频率", //服务器房间 刷新频率
+            "Description": "客户端在地图准备大厅屏幕上每X秒将向服务器请求刷新当前房间列表" //客户端在地图准备大厅屏幕上每X秒将向服务器请求刷新当前房间列表
+        },
+        "UDP 端口": {
+            "Category": "1.网络",
+            "DispName": "UDP 端口", //UDP 端口
+            "Description": "用于UDP游戏数据包的端口" //用于UDP游戏数据包的端口
+        },
+        "使用 UPnP": {
+            "Category": "1.网络",
+            "DispName": "使用 UPnP", //使用 UPnP
+            "Description": "尝试使用UPnP打开端口。如果您无法自己打开端口，但路由器支持UPnP，这将很有用" //尝试使用UPnP打开端口。如果您无法自己打开端口，但路由器支持UPnP，这将很有用
+        },
+        "使用 NAT 打孔": {
+            "Category": "1.网络",
+            "DispName": "使用 NAT 打孔", //使用 NAT 打孔
+            "Description": "在托管战局时使用NAT打孔。仅适用于全锥形NAT类型的路由器，并且需要在SPT服务器上运行NatPunchServer。启用此模式时，UPnP、强制IP和强制绑定IP将被禁用" //在托管战局时使用NAT打孔。仅适用于全锥形NAT类型的路由器，并且需要在SPT服务器上运行NatPunchServer。启用此模式时，UPnP、强制IP和强制绑定IP将被禁用
+        },
+        "连接超时": {
+            "Category": "1.网络",
+            "DispName": "连接超时", //连接超时
+            "Description": "如果未收到数据包，则连接被视为丢失的时间" //如果未收到数据包，则连接被视为丢失的时间
+        },
+        "发包速率": {
+            "Category": "1.网络",
+            "DispName": "发包速率", //发包速率
+            "Description": "建议不要高于中，因为之后的收益微不足道。" //建议不要高于中，因为之后的收益微不足道。
+        },
+        "平滑率": {
+            "Category": "1.网络",
+            "DispName": "平滑率", //平滑率
+            "Description": "如果移动不平滑，请将其设置为“高”。战局期间无法更改。" //如果移动不平滑，请将其设置为“高”。战局期间无法更改。
+        },
+        //2.联机
+        "[2.联机]通知栏信息 显示": {
+            "Category": "2.联机",
+            "DispName": "通知栏信息 显示", //通知栏信息 显示
+            "Description": "启用自定义通知，当玩家死亡、提取、击杀boss等时显示" //启用自定义通知，当玩家死亡、提取、击杀boss等时显示
+        },
+        "自动撤离": {
+            "Category": "2.联机",
+            "DispName": "自动撤离", //自动撤离
+            "Description": "在撤离倒计时结束后自动撤离。只在没有客户端连接时且作为主机时有效" //在撤离倒计时结束后自动撤离。只在没有客户端连接时且作为主机时有效
+        },
+        "撤离信息 显示": {
+            "Category": "2.联机",
+            "DispName": "撤离信息 显示", //撤离信息 显示
+            "Description": "是否在死亡/撤离后显示消息" //是否在死亡/撤离后显示消息
+        },
+        "主动撤离 快捷键": {
+            "Category": "2.联机",
+            "DispName": "主动撤离 快捷键", //主动撤离 快捷键
+            "Description": "用于从战局中撤离的按键" //用于从战局中撤离的按键
+        },
+        "聊天 启动": {
+            "Category": "2.联机",
+            "DispName": "聊天 启动", //聊天 启动
+            "Description": "切换以启用游戏内聊天。无法在战局中更改" //切换以启用游戏内聊天。无法在战局中更改
+        },
+        "聊天栏 快捷键": {
+            "Category": "2.联机",
+            "DispName": "聊天栏 快捷键", //聊天栏 快捷键
+            "Description": "打开聊天窗口的按键" //打开聊天窗口的按键
+        },
+        "在线大厅 显示": {
+            "Category": "2.联机",
+            "DispName": "在线大厅 显示", //在线大厅 显示
+            "Description": "是否在主菜单界面显示 在线大厅" //是否在主菜单界面显示 在线大厅
+        },
+        "在线大厅 尺寸大小": {
+            "Category": "2.联机",
+            "DispName": "在线大厅 尺寸大小", //在线大厅 尺寸大小
+            "Description": "需要刷新主菜单才能生效。" //需要刷新主菜单才能生效。
+        },
+        //3.联机 | 铭牌显示
+        "玩家名称 显示": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "玩家名称 显示", //玩家名称 显示
+            "Description": "是否显示 玩家名称&血条" //是否显示 玩家名称&血条
+        },
+        "隐藏血条": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "隐藏血条", //隐藏血条
+            "Description": "完全隐藏玩家血条." //完全隐藏玩家血条.
+        },
+        "血量百分比% 显示": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "血量百分比% 显示", //血量百分比% 显示
+            "Description": "显示血量的百分比%而不是显示血条" //显示血量的百分比%而不是显示血条
+        },
+        "状态效果 显示": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "状态效果 显示", //状态效果 显示
+            "Description": "开启后，会在玩家血条下方展示当前的状态效果" //开启后，会在玩家血条下方展示当前的状态效果
+        },
+        "玩家阵营 显示": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "玩家阵营 显示", //玩家阵营 显示
+            "Description": "开启后，会在玩家血条边上显示玩家的所属阵营" //开启后，会在玩家血条边上显示玩家的所属阵营
+        },
+        "开镜时隐藏 玩家铭牌": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "开镜时隐藏 玩家铭牌", //开镜时隐藏 玩家铭牌
+            "Description": "在使用 瞄准镜 观察时隐藏铭牌." //在使用 瞄准镜 观察时隐藏铭牌.
+        },
+        "开镜时缩放 玩家铭牌": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "开镜时缩放 玩家铭牌", //开镜时缩放 玩家铭牌
+            "Description": "在使用 瞄准镜 观察时缩放铭牌" //在使用 瞄准镜 观察时缩放铭牌
+        },
+        "未注视时 降低透明度": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "未注视时 降低透明度", //未注视时 降低透明度
+            "Description": "当未注视玩家时，降低铭牌的透明度" //当未注视玩家时，降低铭牌的透明度
+        },
+        "铭牌比例": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "铭牌比例", //铭牌比例
+            "Description": "铭牌的大小" //铭牌的大小
+        },
+        "瞄准时 透明度": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "瞄准时 透明度", //瞄准时 透明度
+            "Description": "瞄准时铭牌的透明度" //瞄准时铭牌的透明度
+        },
+        "铭牌显示 最大距离": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "铭牌显示 最大距离", //铭牌显示 最大距离
+            "Description": "铭牌将变得不可见的最大距离，开始在输入值的一半处逐渐消失" //铭牌将变得不可见的最大距离，开始在输入值的一半处逐渐消失
+        },
+        "铭牌透明度 最小值": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "铭牌透明度 最小值", //铭牌透明度 最小值
+            "Description": "铭牌的最小透明度" //铭牌的最小透明度
+        },
+        "铭牌比例 最小值": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "铭牌比例 最小值", //铭牌比例 最小值
+            "Description": "铭牌的最小比例" //铭牌的最小比例
+        },
+        "铭牌遮挡": {
+            "Category": "3.联机 | 铭牌显示",
+            "DispName": "铭牌遮挡", //铭牌遮挡
+            "Description": "当玩家不在视线范围内时，使用遮挡来隐藏铭牌" //当玩家不在视线范围内时，使用遮挡来隐藏铭牌
+        },
+        //4.联机 | 进度共享
+        "任务类型": {
+            "Category": "4.联机 | 进度共享",
+            "DispName": "任务类型", //任务类型
+            "Description": "其中 放置标记：既包括 标记 也包括放置 物品" //其中 放置标记：既包括 标记 也包括放置 物品
+        },
+        "[4.联机 | 进度共享]通知栏信息 显示": {
+            "Category": "4.联机 | 进度共享",
+            "DispName": "通知栏信息 显示", //通知栏信息 显示
+            "Description": "是否在任务进度共享时显示通知" //是否在任务进度共享时显示通知
+        },
+        "击杀进度 共享": {
+            "Category": "4.联机 | 进度共享",
+            "DispName": "击杀进度 共享", //击杀进度 共享
+            "Description": "用可能会导致击杀数量不一致且不一定有效。" //用可能会导致击杀数量不一致且不一定有效。
+        },
+        "击杀Boss 经验共享": {
+            "Category": "4.联机 | 进度共享",
+            "DispName": "击杀Boss 经验共享", //击杀Boss 经验共享
+            "Description": "如果启用，当友方玩家杀死 Boss 时，你将获得 一半 的经验" //如果启用，当友方玩家杀死 Boss 时，你将获得 一半 的经验
+        },
+        //5.联机 | 标点系统
+        "标点功能 启动": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点功能 启动", //标点功能 启动
+            "Description": "启用标点系统。开启后，您可以通过按下标点键来接收和发送标点" //启用标点系统。开启后，您可以通过按下标点键来接收和发送标点
+        },
+        "标点 快捷键": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 快捷键", //标点 快捷键
+            "Description": "用于发送标点的按键" //用于发送标点的按键
+        },
+        "标点 颜色": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 颜色", //标点 颜色
+            "Description": "标点在其他玩家屏幕上的颜色" //标点在其他玩家屏幕上的颜色
+        },
+        "标点 大小": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 大小", //标点 大小
+            "Description": "标点图标大小倍率" //标点图标大小倍率
+        },
+        "标点 显示时间": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 显示时间", //标点 显示时间
+            "Description": "标点显示的时长" //标点显示的时长
+        },
+        "标点 动画": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 动画", //标点 动画
+            "Description": "当发送标点时自动播放指示动画。可能会影响游戏体验" //当发送标点时自动播放指示动画。可能会影响游戏体验
+        },
+        "标点 开镜时显示": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 开镜时显示", //标点 开镜时显示
+            "Description": "是否在瞄准镜视野中显示标点" //是否在瞄准镜视野中显示标点
+        },
+        "标点 开镜时缩放": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 开镜时缩放", //标点 开镜时缩放
+            "Description": "标点位置是否应使用瞄准镜时显示" //标点位置是否应使用瞄准镜时显示
+        },
+        "标点 距离缩放": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 距离缩放", //标点 距离缩放
+            "Description": "标点大小是否应随距离从玩家缩放" //标点大小是否应随距离从玩家缩放
+        },
+        "标点 透明度最小值": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 透明度最小值", //标点 透明度最小值
+            "Description": "标点大小是否应随距离从玩家缩放" //标点大小是否应随距离从玩家缩放
+        },
+        "标点 显示距离": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 显示距离", //标点 显示距离
+            "Description": "显示当前标点位置与玩家之间的距离" //显示当前标点位置与玩家之间的距离
+        },
+        "标点 音效": {
+            "Category": "5.联机 | 标点系统",
+            "DispName": "标点 音效", //标点 音效
+            "Description": "标点时播放的音效" //标点时播放的音效
+        },
+        //6.联机 | 调试Debug
+        "自由视角 快捷键": {
+            "Category": "6.联机 | 调试Debug",
+            "DispName": "自由视角 快捷键", //自由视角 快捷键
+            "Description": "用于切换自由视角的按键" //用于切换自由视角的按键
+        },
+        "允许观看AI": {
+            "Category": "6.联机 | 调试Debug",
+            "DispName": "允许观看AI", //允许观看AI
+            "Description": "如果战局中所有玩家都已阵亡/撤离，是否允许观看AI视角" //如果战局中所有玩家都已阵亡/撤离，是否允许观看AI视角
+        },
+        "AZERTY模式(法式键位)": {
+            "Category": "6.联机 | 调试Debug",
+            "DispName": "AZERTY模式(法式键位)", //AZERTY模式(法式键位)
+            "Description": "真的有人需要用这个选项吗" //真的有人需要用这个选项吗
+        },
+        "无人机模式": {
+            "Category": "6.联机 | 调试Debug",
+            "DispName": "无人机模式", //无人机模式
+            "Description": "自由相机是否应该像无人机一样仅沿垂直轴移动" //自由相机是否应该像无人机一样仅沿垂直轴移动
+        },
+        "按键绑定叠加": {
+            "Category": "6.联机 | 调试Debug",
+            "DispName": "按键绑定叠加", //按键绑定叠加
+            "Description": "是否显示包含所有自由视角按键绑定的叠加层" //是否显示包含所有自由视角按键绑定的叠加层
+        },
+        //7.游戏玩法
+        "头部伤害 倍率": {
+            "Category": "7.游戏玩法",
+            "DispName": "头部伤害 倍率", //头部伤害 倍率
+            "Description": "头部受到伤害的倍数。0.2 表示 20%" //头部受到伤害的倍数。0.2 表示 20%
+        },
+        "腋下伤害 倍率": {
+            "Category": "7.游戏玩法",
+            "DispName": "腋下伤害 倍率", //腋下伤害 倍率
+            "Description": "腋下受到伤害的倍数。0.2 表示 20%" //腋下受到伤害的倍数。0.2 表示 20%
+        },
+        "腹部伤害 倍率": {
+            "Category": "7.游戏玩法",
+            "DispName": "腹部伤害 倍率", //腹部伤害 倍率
+            "Description": "腹部受到伤害的倍数。0.2 表示 20%" //腹部受到伤害的倍数。0.2 表示 20%
+        },
+        "AI新陈代谢 禁用": {
+            "Category": "7.游戏玩法",
+            "DispName": "AI新陈代谢 禁用", //AI新陈代谢 禁用
+            "Description": "禁用AI的新陈代谢，防止它们在过长时间的战局中因能量/水分丧失而死亡" //禁用AI的新陈代谢，防止它们在过长时间的战局中因能量/水分丧失而死亡
+        },
+        //8.性能
+        "动态AI": {
+            "Category": "8.性能",
+            "DispName": "动态AI", //动态AI
+            "Description": "使用动态AI系统，在AI位于任何玩家范围之外时禁用AI" //使用动态AI系统，在AI位于任何玩家范围之外时禁用AI
+        },
+        "动态AI 范围": {
+            "Category": "8.性能",
+            "DispName": "动态AI 范围", //动态AI 范围
+            "Description": "动态禁用AI的范围" //动态禁用AI的范围
+        },
+        "动态AI 扫描频率": {
+            "Category": "8.性能",
+            "DispName": "动态AI 扫描频率", //动态AI 扫描频率
+            "Description": "动态AI扫描所有玩家范围的频率" //动态AI扫描所有玩家范围的频率
+        },
+        "动态AI 忽略狙击手": {
+            "Category": "8.性能",
+            "DispName": "动态AI 忽略狙击手", //动态AI 忽略狙击手
+            "Description": "是否动态AI应该忽略狙击手" //是否动态AI应该忽略狙击手
+        },
+        //9.性能 | AI上限
+        "强制生成限制": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "强制生成限制", //强制生成限制
+            "Description": "当生成AI时，强制执行生成限制，确保不超过原版限制。主要在使用生成模组或修改AI限制的情况下生效。不会阻止特殊AI的生成，例如Boss" //当生成AI时，强制执行生成限制，确保不超过原版限制。主要在使用生成模组或修改AI限制的情况下生效。不会阻止特殊AI的生成，例如Boss
+        },
+        "优先消失最远的AI": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "优先消失最远的AI", //优先消失最远的AI
+            "Description": "不过，如果没有动态生成模组，这可能会迅速耗尽地图上的生成点，使战局变得十分冷清" //不过，如果没有动态生成模组，这可能会迅速耗尽地图上的生成点，使战局变得十分冷清
+        },
+        "AI消失 最小距离": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI消失 最小距离", //AI消失 最小距离
+            "Description": "在此距离内AI不会消失" //在此距离内AI不会消失
+        },
+        "AI上限 - 工厂": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 工厂", //AI上限 - 工厂
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 海关": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 海关", //AI上限 - 海关
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 立交桥": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 立交桥", //AI上限 - 立交桥
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 储备站": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 储备站", //AI上限 - 储备站
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 森林": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 森林", //AI上限 - 森林
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 海岸线": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 海岸线", //AI上限 - 海岸线
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 塔科夫街区": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 塔科夫街区", //AI上限 - 塔科夫街区
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 中心区": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 中心区", //AI上限 - 中心区
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 实验室": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 实验室", //AI上限 - 实验室
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        "AI上限 - 灯塔": {
+            "Category": "9.性能 | AI上限",
+            "DispName": "AI上限 - 灯塔", //AI上限 - 灯塔
+            "Description": "可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改" //可以同时存在的最大AI数量。如果你的PC性能较差，这个设置很有用。设置为0则使用原版限制。在战局中不能更改
+        },
+        //99.进阶
+        "官方版本 显示": {
+            "Category": "99.进阶",
+            "DispName": "官方版本 显示", //官方版本 显示
+            "Description": "显示官方版本而非 Fika 版本" //显示官方版本而非 Fika 版本
+        },
+        //999.隐藏
+        "已接受条款": {
+            "Category": "999.隐藏",
+            "DispName": "已接受条款", //已接受条款
+            "Description": "已接受服务条款" //已接受服务条款
+        },
+        //Advanced
+        "Show Official Version": {
+            "Category": "Advanced",
+            "DispName": "Show Official Version" //Show Official Version
+        },
+        //Coop
+        "Show Feed": {
+            "Category": "Coop",
+            "DispName": "Show Feed" //Show Feed
+        },
+        "Auto Extract": {
+            "Category": "Coop",
+            "DispName": "Auto Extract" //Auto Extract
+        },
+        "Show Extract Message": {
+            "Category": "Coop",
+            "DispName": "Show Extract Message" //Show Extract Message
+        },
+        "Extract Key": {
+            "Category": "Coop",
+            "DispName": "Extract Key" //Extract Key
+        },
+        "Enable Chat": {
+            "Category": "Coop",
+            "DispName": "Enable Chat" //Enable Chat
+        },
+        "Chat Key": {
+            "Category": "Coop",
+            "DispName": "Chat Key" //Chat Key
+        },
+        "Enable Online Players": {
+            "Category": "Coop",
+            "DispName": "Enable Online Players" //Enable Online Players
+        },
+        "Online Players Scale": {
+            "Category": "Coop",
+            "DispName": "Online Players Scale" //Online Players Scale
+        },
+        //Coop | Debug
+        "Free Camera Button": {
+            "Category": "Coop | Debug",
+            "DispName": "Free Camera Button" //Free Camera Button
+        },
+        "Allow Spectating Bots": {
+            "Category": "Coop | Debug",
+            "DispName": "Allow Spectating Bots" //Allow Spectating Bots
+        },
+        "AZERTY Mode": {
+            "Category": "Coop | Debug",
+            "DispName": "AZERTY Mode" //AZERTY Mode
+        },
+        "Drone Mode": {
+            "Category": "Coop | Debug",
+            "DispName": "Drone Mode" //Drone Mode
+        },
+        "Keybind Overlay": {
+            "Category": "Coop | Debug",
+            "DispName": "Keybind Overlay" //Keybind Overlay
+        },
+        //Coop | Name Plates
+        "Show Player Name Plates": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Show Player Name Plates" //Show Player Name Plates
+        },
+        "Hide Health Bar": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Hide Health Bar" //Hide Health Bar
+        },
+        "Show HP% instead of bar": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Show HP% instead of bar" //Show HP% instead of bar
+        },
+        "Show Effects": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Show Effects" //Show Effects
+        },
+        "Show Player Faction Icon": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Show Player Faction Icon" //Show Player Faction Icon
+        },
+        "Hide Name Plate in Optic": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Hide Name Plate in Optic" //Hide Name Plate in Optic
+        },
+        "Name Plates Use Optic Zoom": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Name Plates Use Optic Zoom" //Name Plates Use Optic Zoom
+        },
+        "Decrease Opacity In Peripheral": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Decrease Opacity In Peripheral" //Decrease Opacity In Peripheral
+        },
+        "Name Plate Scale": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Name Plate Scale" //Name Plate Scale
+        },
+        "Opacity in ADS": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Opacity in ADS" //Opacity in ADS
+        },
+        "Max Distance to Show": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Max Distance to Show" //Max Distance to Show
+        },
+        "Minimum Opacity": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Minimum Opacity" //Minimum Opacity
+        },
+        "Minimum Name Plate Scale": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Minimum Name Plate Scale" //Minimum Name Plate Scale
+        },
+        "Use Occlusion": {
+            "Category": "Coop | Name Plates",
+            "DispName": "Use Occlusion" //Use Occlusion
+        },
+        //Coop | Pinging
+        "Ping System": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping System" //Ping System
+        },
+        "Ping Button": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Button" //Ping Button
+        },
+        "Ping Color": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Color" //Ping Color
+        },
+        "Ping Size": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Size" //Ping Size
+        },
+        "Ping Time": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Time" //Ping Time
+        },
+        "Play Ping Animation": {
+            "Category": "Coop | Pinging",
+            "DispName": "Play Ping Animation" //Play Ping Animation
+        },
+        "Show Ping During Optics": {
+            "Category": "Coop | Pinging",
+            "DispName": "Show Ping During Optics" //Show Ping During Optics
+        },
+        "Ping Use Optic Zoom": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Use Optic Zoom" //Ping Use Optic Zoom
+        },
+        "Ping Scale With Distance": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Scale With Distance" //Ping Scale With Distance
+        },
+        "Ping Minimum Opacity": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Minimum Opacity" //Ping Minimum Opacity
+        },
+        "Show Ping Range": {
+            "Category": "Coop | Pinging",
+            "DispName": "Show Ping Range" //Show Ping Range
+        },
+        "Ping Sound": {
+            "Category": "Coop | Pinging",
+            "DispName": "Ping Sound" //Ping Sound
+        },
+        //Coop | Quest Sharing
+        "Quest Types": {
+            "Category": "Coop | Quest Sharing",
+            "DispName": "Quest Types" //Quest Types
+        },
+        "Show Notifications": {
+            "Category": "Coop | Quest Sharing",
+            "DispName": "Show Notifications" //Show Notifications
+        },
+        "Easy Kill Conditions": {
+            "Category": "Coop | Quest Sharing",
+            "DispName": "Easy Kill Conditions" //Easy Kill Conditions
+        },
+        "Shared Kill Experience": {
+            "Category": "Coop | Quest Sharing",
+            "DispName": "Shared Kill Experience" //Shared Kill Experience
+        },
+        "Shared Boss Experience": {
+            "Category": "Coop | Quest Sharing",
+            "DispName": "Shared Boss Experience" //Shared Boss Experience
+        },
+        //Gameplay
+        "Disable Bot Metabolism": {
+            "Category": "Gameplay",
+            "DispName": "Disable Bot Metabolism" //Disable Bot Metabolism
+        },
+        //Hidden
+        "Accepted TOS": {
+            "Category": "Hidden",
+            "DispName": "Accepted TOS" //Accepted TOS
+        },
+        //Network
+        "Native Sockets": {
+            "Category": "Network",
+            "DispName": "Native Sockets" //Native Sockets
+        },
+        "Force IP": {
+            "Category": "Network",
+            "DispName": "Force IP" //Force IP
+        },
+        "Force Bind IP": {
+            "Category": "Network",
+            "DispName": "Force Bind IP" //Force Bind IP
+        },
+        "UDP Port": {
+            "Category": "Network",
+            "DispName": "UDP Port" //UDP Port
+        },
+        "Use UPnP": {
+            "Category": "Network",
+            "DispName": "Use UPnP" //Use UPnP
+        },
+        "Use NAT Punching": {
+            "Category": "Network",
+            "DispName": "Use NAT Punching" //Use NAT Punching
+        },
+        "Connection Timeout": {
+            "Category": "Network",
+            "DispName": "Connection Timeout" //Connection Timeout
+        },
+        "Send Rate": {
+            "Category": "Network",
+            "DispName": "Send Rate" //Send Rate
+        },
+        "Smoothing Rate": {
+            "Category": "Network",
+            "DispName": "Smoothing Rate" //Smoothing Rate
+        },
+        //Performance
+        "Dynamic AI": {
+            "Category": "Performance",
+            "DispName": "Dynamic AI" //Dynamic AI
+        },
+        "Dynamic AI Range": {
+            "Category": "Performance",
+            "DispName": "Dynamic AI Range" //Dynamic AI Range
+        },
+        "Dynamic AI Rate": {
+            "Category": "Performance",
+            "DispName": "Dynamic AI Rate" //Dynamic AI Rate
+        },
+        "Ignore Snipers": {
+            "Category": "Performance",
+            "DispName": "Ignore Snipers" //Ignore Snipers
+        },
+        //Performance | Max Bots
+        "Enforced Spawn Limits": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Enforced Spawn Limits" //Enforced Spawn Limits
+        },
+        "Despawn Furthest": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Despawn Furthest" //Despawn Furthest
+        },
+        "Despawn Minimum Distance": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Despawn Minimum Distance" //Despawn Minimum Distance
+        },
+        "Max Bots Factory": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Factory" //Max Bots Factory
+        },
+        "Max Bots Customs": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Customs" //Max Bots Customs
+        },
+        "Max Bots Interchange": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Interchange" //Max Bots Interchange
+        },
+        "Max Bots Reserve": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Reserve" //Max Bots Reserve
+        },
+        "Max Bots Woods": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Woods" //Max Bots Woods
+        },
+        "Max Bots Shoreline": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Shoreline" //Max Bots Shoreline
+        },
+        "Max Bots Streets of Tarkov": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Streets of Tarkov" //Max Bots Streets of Tarkov
+        },
+        "Max Bots Ground Zero": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Ground Zero" //Max Bots Ground Zero
+        },
+        "Max Bots Labs": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Labs" //Max Bots Labs
+        },
+        "Max Bots Lighthouse": {
+            "Category": "Performance | Max Bots",
+            "DispName": "Max Bots Lighthouse" //Max Bots Lighthouse
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "String": {
+            "Disabled": "Disabled",
+            "0.0.0.0": "0.0.0.0",
+            "192.168.0.107": "192.168.0.107"
+        },
+        "ESendRate": {
+            "VeryLow": "VeryLow",
+            "Low": "Low",
+            "Medium": "Medium",
+            "High": "High"
+        },
+        "ESmoothingRate": {
+            "Low": "Low",
+            "Medium": "Medium",
+            "High": "High"
+        },
+        "EQuestSharingTypes": {
+            "击杀": "击杀",
+            "寻找物品": "寻找物品",
+            "踩点": "踩点",
+            "放置标记": "放置标记",
+            "全部类型": "全部类型"
+        },
+        "EPingSound": {
+            "SubQuestComplete": "SubQuestComplete",
+            "InsuranceInsured": "InsuranceInsured",
+            "ButtonClick": "ButtonClick",
+            "ButtonHover": "ButtonHover",
+            "InsuranceItemInsured": "InsuranceItemInsured",
+            "MenuButtonBottom": "MenuButtonBottom",
+            "ErrorMessage": "ErrorMessage",
+            "InspectWindow": "InspectWindow",
+            "InspectWindowClose": "InspectWindowClose",
+            "MenuEscape": "MenuEscape"
+        },
+        "EDynamicAIRates": {
+            "Low": "Low",
+            "Medium": "Medium",
+            "High": "High"
+        }
+    }
+}

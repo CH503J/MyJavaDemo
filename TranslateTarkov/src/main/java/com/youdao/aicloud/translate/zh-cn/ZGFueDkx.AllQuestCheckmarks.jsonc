@@ -1,0 +1,58 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "AllQuestsCheckmarks"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //1. General
+        "Include Collector quest (Fence)": {
+            "Category": "1. General",
+            "DispName": "包括收集任务（栅栏）", //Include Collector quest (Fence)
+            "Description": "是否包含收集任务所需的物品" //Whether or not to include items needed for Collector quest
+        },
+        "Include loyalty regain quests": {
+            "Category": "1. General",
+            "DispName": "包括重新获得黑商好感的任务", //Include loyalty regain quests
+            "Description": "是否包含重获黑商好感的任务（补偿伤害（栅栏），弥补（光明守护者）和化学任务线结局）" //Whether or not to include quests for regaining loyalty (Compensation for Damage (Fence), Make Amends (Lightkeeper) & Chemical questline finale)
+        },
+        "Include non-FiR quest": {
+            "Category": "1. General",
+            "DispName": "包括非fir任务", //Include non-FiR quest
+            "Description": "是否包含不需要在raid道具中找到的任务" //Whether or not to include quests that don't require found in raid items
+        },
+        "Mark squad members quests": {
+            "Category": "1. General",
+            "DispName": "标记小队成员的任务", //Mark squad members quests
+            "Description": "是否标记球队中球员当前需要的物品" //Wether or not to mark items currently needed for players in your squad
+        },
+        //2. Colors
+        "Checkmark color": {
+            "Category": "2. Colors",
+            "DispName": "选中标记颜色", //Checkmark color
+            "Description": "如果项目目前不需要，但将来的任务需要复选标记的颜色（HEX #ffffff或RGB 255,255,255）" //Color of checkmark if item is not currently needed but is required for future quests (either HEX #ffffff or RGB 255,255,255)
+        },
+        "Checkmark color (non-FIR)": {
+            "Category": "2. Colors",
+            "DispName": "复选标记颜色（非fir）", //Checkmark color (non-FIR)
+            "Description": "如果当前不需要非fir项目，但将来的任务需要复选标记的颜色（HEX #ffffff或RGB 255,255,255）" //Color of checkmark if non-FiR item is not currently needed but is required for future quests (either HEX #ffffff or RGB 255,255,255)
+        },
+        "Checkmark color (squad members)": {
+            "Category": "2. Colors",
+            "DispName": "标记颜色（小队成员）", //Checkmark color (squad members)
+            "Description": "如果物品目前不需要，但你的一个小队成员需要，则选中标记的颜色（HEX #ffffff或RGB 255,255,255）" //Color of checkmark if item is not currently needed but is required for one of your squad members (either HEX #ffffff or RGB 255,255,255)
+        },
+        //3. Debug
+        "Debug logs": {
+            "Category": "3. Debug",
+            "DispName": "调试日志", //Debug logs
+            "Description": "将调试信息记录到Player.log中" //Log debug info to Player.log
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

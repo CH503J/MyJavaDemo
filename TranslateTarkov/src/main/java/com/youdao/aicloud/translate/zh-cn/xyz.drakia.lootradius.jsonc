@@ -1,0 +1,20 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "DrakiaXYZ-战利品半径"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        "Loot Radius": {
+            "Category": "1. General",
+            "DispName": "战利品半径", //Loot Radius
+            "Description": "包括战利品的距离" //The distance to include loot from
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

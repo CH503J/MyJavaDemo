@@ -1,0 +1,24 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "HideSpecialIcon"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        "Enable": {
+            "Category": "General",
+            "DispName": "Enable", //Enable
+            "Description": "Plugin GUID: com.pandahhcorp.hidespecialicon" //Plugin GUID: com.pandahhcorp.hidespecialicon
+        },
+        "Frames To Wait": {
+            "Category": "General",
+            "DispName": "Frames To Wait" //Frames To Wait
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

@@ -1,0 +1,152 @@
+{
+    // 模组名称汉化
+    "PluginInfo": {
+        "PluginName": "性能优化"
+    },
+    // 设置汉化
+    "ConfigEntries": {
+        // Bot Limiter
+        "Enable Bot Distance Limiter": {
+            "Category": "Bot Limiter",
+            "DispName": "启用 Bot 距离限制",
+            "Description": "禁用超过设定距离的 Bot。"
+        },
+        "Max Active Bot Count": {
+            "Category": "Bot Limiter",
+            "DispName": "最大活动 Bot 数量",
+            "Description": "在任何时间内可同时活动的 Bot 数量。"
+        },
+        "Limit Scavs": {
+            "Category": "Bot Limiter",
+            "DispName": "限制 Scavs",
+            "Description": "是否禁用 Scavs？"
+        },
+        "Limit Sniper Scavs": {
+            "Category": "Bot Limiter",
+            "DispName": "限制狙击 Scavs",
+            "Description": "是否禁用狙击 Scavs？"
+        },
+        "Limit Pmcs": {
+            "Category": "Bot Limiter",
+            "DispName": "限制 Pmcs",
+            "Description": "是否禁用 Pmcs？"
+        },
+        "Limit Bosses": {
+            "Category": "Bot Limiter",
+            "DispName": "限制 Bosses",
+            "Description": "是否禁用 Bosses？"
+        },
+        "Factory Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "工厂地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Woods Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "森林地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Customs Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "海关地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Interchange Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "立交地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Reserve Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "储备站地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Shoreline Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "海岸线地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Labs Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "实验室地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Lighthouse Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "灯塔地图 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "Streets Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "城市街区 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        "GroundZero Distance": {
+            "Category": "Bot Limiter",
+            "DispName": "零号地带 Bot 禁用距离",
+            "Description": "超过该距离的 Bot 将被禁用。"
+        },
+        // General
+        "Use Experimental Patches(Requires Restart)": {
+            "Category": "General",
+            "DispName": "使用实验性补丁（需要重启）",
+            "Description": "启用或禁用实验性补丁。需要重启。此功能包括从逻辑优化到线程优化的多种改进。"
+        },
+        // Graphics
+        "Enable Experimental Graphic Settings": {
+            "Category": "Graphics",
+            "DispName": "启用实验性图形设置",
+            "Description": "在 EFT 图形设置页面启用实验性图形选项。（需要重启）"
+        },
+        // Scope Resolution
+        "Enable Dynamic Scope Resolution": {
+            "Category": "Scope Resolution",
+            "DispName": "启用动态瞄具分辨率",
+            "Description": "瞄准时是否调整渲染分辨率？"
+        },
+        "Super Sampling": {
+            "Category": "Scope Resolution",
+            "DispName": "超采样",
+            "Description": "应用多少倍的下采样，仅在未启用 DLSS 或 FSR 模式时生效。"
+        },
+        "DLSS mode": {
+            "Category": "Scope Resolution",
+            "DispName": "DLSS 模式",
+            "Description": "应用于瞄具的 DLSS 模式，仅当 EFT 图形设置选择了 DLSS 作为缩放模式时生效。"
+        },
+        "FSR2 mode": {
+            "Category": "Scope Resolution",
+            "DispName": "FSR2 模式",
+            "Description": "应用于瞄具的 FSR2 模式，仅当 EFT 图形设置选择了 FSR2 作为缩放模式时生效。"
+        },
+        "FSR3 mode": {
+            "Category": "Scope Resolution",
+            "DispName": "FSR3 模式",
+            "Description": "应用于瞄具的 FSR3 模式，仅当 EFT 图形设置选择了 FSR3 作为缩放模式时生效。"
+        }
+    },
+    // 选项汉化
+    "Enum": {
+        "EDLSSMode": {
+            "Off": "关闭",
+            "Quality": "质量模式",
+            "Balanced": "平衡模式",
+            "Performance": "性能模式",
+            "UltraPerformance": "超高性能模式"
+        },
+        "EFSR2Mode": {
+            "Off": "关闭",
+            "Quality": "质量模式",
+            "Balanced": "平衡模式",
+            "Performance": "性能模式",
+            "UltraPerformance": "超高性能模式"
+        },
+        "EFSR3Mode": {
+            "Off": "关闭",
+            "Quality": "质量模式",
+            "Balanced": "平衡模式",
+            "Performance": "性能模式",
+            "UltraPerformance": "超高性能模式"
+        }
+    }
+}

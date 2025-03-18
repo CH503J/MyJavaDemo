@@ -26,10 +26,7 @@
             <systemPath>${project.basedir}/src/main/resources/lib/aspose-words-21.1-jdk17-cracked.jar</systemPath>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity-engine-core</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.chenjun</groupId>
             <artifactId>Common</artifactId>

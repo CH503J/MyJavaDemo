@@ -1,0 +1,831 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "Graphics"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //AmandsGraphics Cinematic
+        "MotionBlur": {
+            "Category": "AmandGraphics Cinematic",
+            "DispName": "运动模糊", //MotionBlur
+            "Description": "运动模糊需要将抗锯齿设置为TAA才能正常工作" //Motion Blur needs anti-aliasing set to TAA to work as intended
+        },
+        "MotionBlur SampleCount": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "运动模糊采样数" //MotionBlur SampleCount
+        },
+        "MotionBlur ShutterAngle": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "运动模糊快门角度" //MotionBlur ShutterAngle
+        },
+        "HBAO": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "HBAO" //HBAO
+        },
+        "[AmandsGraphics Cinematic]HBAO 强度": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "HBAO 强度" //HBAO Intensity
+        },
+        "[AmandsGraphics Cinematic]HBAO Saturation": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "HBAO 饱和度" //HBAO Saturation
+        },
+        "[AmandsGraphics Cinematic]HBAO Albedo Multiplier": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "HBAO Albedo 乘数" //HBAO Albedo Multiplier
+        },
+        "SurroundDepthOfField": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "环绕景深", //SurroundDepthOfField
+            "Description": "需要在图形设置中启用高质量颜色" //High-Quality Color needs to be Enabled on Graphics Settings
+        },
+        "SurroundDOF OpticZoom": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "环绕DOF 光学缩放", //SurroundDOF OpticZoom
+            "Description": "如果缩放值大于或等于此值，则启用景深" //DepthOfField will be enabled if the zoom is greater than or equal to this value
+        },
+        "SurroundDOF Aperture": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "SurroundDOF Aperture", //SurroundDOF Aperture
+            "Description": "值越小，景深越浅" //The smaller the value is, the shallower the depth of field is
+        },
+        "SurroundDOF Speed": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "环绕DOF 速度", //SurroundDOF Speed
+            "Description": "动画速度" //Animation speed
+        },
+        "SurroundDOF FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "环绕DOF 焦距", //SurroundDOF FocalLength
+            "Description": "值越大，景深越浅" //The larger the value is, the shallower the depth of field is
+        },
+        "SurroundDOF FocalLength Off": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "环绕DOF 焦距 关闭", //SurroundDOF FocalLength Off
+            "Description": "值越大，景深越浅。用于动画确定什么被认为是关闭的" //The larger the value is, the shallower the depth of field is. Used by animation to determinate what's considered off
+        },
+        "DOF KernelSize": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "DOF 内核大小", //DOF KernelSize
+            "Description": "此设置决定了光晕的最大半径" //This setting determines the maximum radius of bokeh
+        },
+        "UIDepthOfField": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "UI景深", //UIDepthOfField
+            "Description": "需要在图形设置中启用高质量颜色" //High-Quality Color needs to be Enabled on Graphics Settings\"
+        },
+        "UIDOF Distance": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "UI景深 距离", //UIDOF Distance
+            "Description": "焦点距离" //Focus point distance
+        },
+        "UIDOF Aperture": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "UI景深 光圈", //UIDOF Aperture
+            "Description": "值越小，景深越浅" //The smaller the value is, the shallower the depth of field is
+        },
+        "UIDOF Speed": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "UI景深 速度", //UIDOF Speed
+            "Description": "动画速度" //Animation speed
+        },
+        "UIDOF FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "UI景深 焦距", //UIDOF FocalLength
+            "Description": "值越大，景深越浅" //The larger the value is, the shallower the depth of field is
+        },
+        "WeaponDepthOfField": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器景深" //WeaponDepthOfField
+        },
+        "WeaponDOF Speed": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 速度", //WeaponDOF Speed
+            "Description": "动画速度" //Animation speed
+        },
+        "WeaponDOF Weapon Blur": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 武器模糊", //WeaponDOF Weapon Blur
+            "Description": "最大模糊大小" //Max Blur Size
+        },
+        "WeaponDOF IronSight Blur": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 铁瞄准具模糊", //WeaponDOF IronSight Blur
+            "Description": "使用铁瞄准具时的最大模糊大小" //Max Blur Size when aiming with iron sights
+        },
+        "WeaponDOF Sight Blur": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 准星模糊", //WeaponDOF Sight Blur
+            "Description": "使用准星时的最大模糊大小" //Max Blur Size when aiming with sights
+        },
+        "WeaponDOF NVG Blur": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 夜视仪模糊", //WeaponDOF NVG Blur
+            "Description": "使用夜视仪时的最大模糊大小" //Max Blur Size when aiming with sights
+        },
+        "WeaponDOF Weapon FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 武器焦距" //WeaponDOF Weapon FocalLength
+        },
+        "WeaponDOF IronSight FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 铁瞄准具焦距" //WeaponDOF IronSight FocalLength
+        },
+        "WeaponDOF Sight FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 准星焦距" //WeaponDOF Sight FocalLength
+        },
+        "WeaponDOF NVG FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 夜视仪焦距" //WeaponDOF NVG FocalLength
+        },
+        "WeaponDOF Aperture": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 光圈" //WeaponDOF Aperture
+        },
+        "WeaponDOF BlurSampleCount": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "武器DOF 模糊采样数" //WeaponDOF BlurSampleCount
+        },
+        "OpticDepthOfField": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学景深", //OpticDepthOfField
+            "Description": "需要在图形设置中启用高质量颜色" //High-Quality Color needs to be Enabled on Graphics Settings\"
+        },
+        "OpticDOF OpticZoom": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 光学缩放", //OpticDOF OpticZoom
+            "Description": "如果缩放值大于或等于此值，则启用光学景深" //OpticDepthOfField will be enabled if the zoom is greater than or equal to this value
+        },
+        "OpticDOF Aperture 1x": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 光圈 1x", //OpticDOF Aperture 1x
+            "Description": "1x缩放时，值越小，景深越浅" //The smaller the value is, the shallower the depth of field is at 1x zoom
+        },
+        "OpticDOF Aperture 2x": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 光圈 2x", //OpticDOF Aperture 2x
+            "Description": "2x缩放时，值越小，景深越浅" //The smaller the value is, the shallower the depth of field is at 2x zoom
+        },
+        "OpticDOF Aperture 4x": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 光圈 4x", //OpticDOF Aperture 4x
+            "Description": "4x缩放时，值越小，景深越浅" //The smaller the value is, the shallower the depth of field is at 4x zoom
+        },
+        "OpticDOF Aperture 6x": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 光圈 6x", // OpticDOF Aperture 6x
+            "Description": "6x缩放及以上时，值越小，景深越浅" //The smaller the value is, the shallower the depth of field is at 6x zoom and above
+        },
+        "OpticDOF Speed": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 速度", // OpticDOF Speed
+            "Description": "动画速度" //Animation speed
+        },
+        "OpticDOF FocalLength Mode": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 焦距模式" //OpticDOF FocalLength Mode
+        },
+        "OpticDOF FocalLength": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 焦距" //OpticDOF FocalLength
+        },
+        "OpticDOF KernelSize": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 内核大小", //OpticDOF KernelSize
+            "Description": "此设置决定了光晕的最大半径" //This setting determines the maximum radius of bokeh
+        },
+        "OpticDOF Raycast Quality": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 射线质量", //OpticDOF Raycast Quality
+            "Description": "植被：2条射线 目标优先于植被后方" //Foliage: 2 Raycasts Targets have priority behind foliage
+        },
+        "OpticDOF Distance Speed": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 距离速度", //OpticDOF Distance Speed
+            "Description": "距离动画速度" //Distance animation speed
+        },
+        "OpticDOF Raycast Distance": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 射线距离", //OpticDOF Raycast Distance
+            "Description": "射线检查碰撞的最大距离" //The max distance the ray should check for collisions
+        },
+        "OpticDOF Target Distance": {
+            "Category": "AmandsGraphics Cinematic",
+            "DispName": "光学DOF 目标距离", //OpticDOF Target Distance
+            "Description": "瞄准被发现目标时的距离窗口（单位：厘米）" //Aiming distance window on spotted target in cm
+        },
+        //AmandsGraphics Experimental
+        "Flashlight": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "手电筒", //Flashlight
+            "Description": "实验性功能" //EXPERIMENTAL
+        },
+        "Flashlight Range": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "手电筒范围", //Flashlight Range
+            "Description": "手电筒范围倍数" //Flashlights range multiplier
+        },
+        "Flashlight ExtinctionCoef": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "手电筒消光系数", //Flashlight ExtinctionCoef
+            "Description": "体积消光系数" //Volumetric extinction coefficient
+        },
+        "NVG": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "夜视仪", //NVG
+            "Description": "实验性功能" //EXPERIMENTAL
+        },
+        "NVG Tonemap": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "夜视仪色调映射" //NVG Tonemap
+        },
+        "[AmandsGraphics Experimental]NVG AmbientContrast": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "NVG 环境对比度" //NVG AmbientContrast
+        },
+        "[AmandsGraphics Experimental]NVG Noise Intensity": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "NVG 噪声强度" //NVG Noise Intensity
+        },
+        "NVG Original Color": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "NVG 原始颜色", //NVG Original Color
+            "Description": "启用所有默认颜色滤镜" //Enables back all default color filters
+        },
+        "[AmandsGraphics Experimental]NVG Original Sky Color": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "NVG 原始天空颜色", //NVG Original Sky Color
+            "Description": "启用夜视仪的默认天空颜色" //Enables back the default sky color for NVG
+        },
+        "NVG Moon LightIntensity": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "NVG 月光强度" //NVG Moon LightIntensity
+        },
+        "Night AmbientLight": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "夜间环境光" //Night AmbientLight
+        },
+        "[AmandsGraphics Experimental]Night AmbientAmbientContrast": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "夜间环境对比度" //Night AmbientAmbientContrast
+        },
+        "MysticalGlow": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "MysticalGlow" //MysticalGlow
+        },
+        "[AmandsGraphics Experimental]MysticalGlow Intensity": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        "HealthEffect Hit": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "HealthEffect Hit" //HealthEffect Hit
+        },
+        "ChromaticAberration": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "ChromaticAberration" //ChromaticAberration
+        },
+        "ChromaticAberration Speed": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "ChromaticAberration Speed" //ChromaticAberration Speed
+        },
+        "ChromaticAberration Power": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "ChromaticAberration Power" //ChromaticAberration Power
+        },
+        "HealthEffect Painkiller": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "HealthEffect Painkiller" //HealthEffect Painkiller
+        },
+        "Painkiller Saturation": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "Painkiller Saturation" //Painkiller Saturation
+        },
+        "HealthEffect Pain": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "HealthEffect Pain" //HealthEffect Pain
+        },
+        "SunMeshBrightness": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "SunMeshBrightness" //SunMeshBrightness
+        },
+        "SkyBrightness": {
+            "Category": "AmandsGraphics Experimental",
+            "DispName": "SkyBrightness" //SkyBrightness
+        },
+        //AmandsGraphics Features
+        "GraphicsToggle": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "GraphicsToggle" //GraphicsToggle
+        },
+        "DebugMode": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "DebugMode", //DebugMode
+            "Description": "Shift + Insert will toggle only the selected DebugMode feature" //Shift + Insert will toggle only the selected DebugMode feature
+        },
+        "Brightness": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Brightness", //Brightness
+            "Description": "EXPERIMENTAL" //EXPERIMENTAL
+        },
+        "[AmandsGraphics Features]Tonemap": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "Use BSG LUT": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Use BSG LUT", //Use BSG LUT
+            "Description": "Enabling this will revert the mod changes" //Enabling this will revert the mod changes
+        },
+        "Bloom Intensity": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Bloom Intensity" //Bloom Intensity
+        },
+        "Use BSG CC_Vintage": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Use BSG CC_Vintage", //Use BSG CC_Vintage
+            "Description": "Enabling this will revert the mod changes" //Enabling this will revert the mod changes
+        },
+        "Use BSG CC_Sharpen": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Use BSG CC_Sharpen", //Use BSG CC_Sharpen
+            "Description": "Enabling this will revert the mod changes" //Enabling this will revert the mod changes
+        },
+        "Use BSG GlobalFog": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Use BSG GlobalFog", //Use BSG GlobalFog
+            "Description": "Enabling this will revert the mod changes" //Enabling this will revert the mod changes
+        },
+        "Use BSG ColorCorrection": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "Use BSG ColorCorrection", //Use BSG ColorCorrection
+            "Description": "Enabling this will revert the mod changes" //Enabling this will revert the mod changes
+        },
+        "LightsUseLinearIntensity": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "LightsUseLinearIntensity" //LightsUseLinearIntensity
+        },
+        "SunColor": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "SunColor" //SunColor
+        },
+        "[AmandsGraphics Features]SkyColor": {
+            "Category": "AmandsGraphics Features",
+            "DispName": "SkyColor" //SkyColor
+        },
+        //AmandsGraphics LightColor
+        "Index0": {
+            "Category": "AmandsGraphics LightColor",
+            "DispName": "Index0" //Index0
+        },
+        "Index1": {
+            "Category": "AmandsGraphics LightColor",
+            "DispName": "Index1" //Index1
+        },
+        "Index2": {
+            "Category": "AmandsGraphics LightColor",
+            "DispName": "Index2" //Index2
+        },
+        "Index3": {
+            "Category": "AmandsGraphics LightColor",
+            "DispName": "Index3" //Index3
+        },
+        "Index4": {
+            "Category": "AmandsGraphics LightColor",
+            "DispName": "Index4" //Index4
+        },
+        "Index5": {
+            "Category": "AmandsGraphics LightColor",
+            "DispName": "Index5" //Index5
+        },
+        //Customs
+        "[Customs]Fog Level": {
+            "Category": "Customs",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Customs]Tonemap": {
+            "Category": "Customs",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Customs]ACES": {
+            "Category": "Customs",
+            "DispName": "ACES" //ACES
+        },
+        "[Customs]ACESS": {
+            "Category": "Customs",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Customs]Filmic": {
+            "Category": "Customs",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Customs]FilmicS": {
+            "Category": "Customs",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Customs]MysticalGlow Intensity": {
+            "Category": "Customs",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Factory
+        "[Factory]Tonemap": {
+            "Category": "Factory",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Factory]ACES": {
+            "Category": "Factory",
+            "DispName": "ACES" //ACES
+        },
+        "[Factory]ACESS": {
+            "Category": "Factory",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Factory]Filmic": {
+            "Category": "Factory",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Factory]FilmicS": {
+            "Category": "Factory",
+            "DispName": "FilmicS" //FilmicS
+        },
+        //FactoryNight
+        "[FactoryNight]Tonemap": {
+            "Category": "FactoryNight",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[FactoryNight]ACES": {
+            "Category": "FactoryNight",
+            "DispName": "ACES" //ACES
+        },
+        "[FactoryNight]ACESS": {
+            "Category": "FactoryNight",
+            "DispName": "ACESS" //ACESS
+        },
+        "[FactoryNight]Filmic": {
+            "Category": "FactoryNight",
+            "DispName": "Filmic" //Filmic
+        },
+        "[FactoryNight]FilmicS": {
+            "Category": "FactoryNight",
+            "DispName": "FilmicS" //FilmicS
+        },
+        //GroundZero
+        "[GroundZero]Fog Level": {
+            "Category": "GroundZero",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[GroundZero]Tonemap": {
+            "Category": "GroundZero",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[GroundZero]ACES": {
+            "Category": "GroundZero",
+            "DispName": "ACES" //ACES
+        },
+        "[GroundZero]ACESS": {
+            "Category": "GroundZero",
+            "DispName": "ACESS" //ACESS
+        },
+        "[GroundZero]Filmic": {
+            "Category": "GroundZero",
+            "DispName": "Filmic" //Filmic
+        },
+        "[GroundZero]FilmicS": {
+            "Category": "GroundZero",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[GroundZero]MysticalGlow Intensity": {
+            "Category": "GroundZero",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Hideout
+        "[Hideout]Tonemap": {
+            "Category": "Hideout",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Hideout]ACES": {
+            "Category": "Hideout",
+            "DispName": "ACES" //ACES
+        },
+        "[Hideout]ACESS": {
+            "Category": "Hideout",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Hideout]Filmic": {
+            "Category": "Hideout",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Hideout]FilmicS": {
+            "Category": "Hideout",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Hideout]SkyColor": {
+            "Category": "Hideout",
+            "DispName": "SkyColor" //SkyColor
+        },
+        //Interchange
+        "[Interchange]Night AmbientAmbientContrast": {
+            "Category": "Interchange",
+            "DispName": "Night AmbientAmbientContrast" //Night AmbientAmbientContrast
+        },
+        "[Interchange]Fog Level": {
+            "Category": "Interchange",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Interchange]NVG Noise Intensity": {
+            "Category": "Interchange",
+            "DispName": "NVG Noise Intensity" //NVG Noise Intensity
+        },
+        "[Interchange]NVG AmbientContrast": {
+            "Category": "Interchange",
+            "DispName": "NVG AmbientContrast" //NVG AmbientContrast
+        },
+        "[Interchange]NVG Original Sky Color": {
+            "Category": "Interchange",
+            "DispName": "NVG Original Sky Color", //NVG Original Sky Color
+            "Description": "Enables back the default sky color for NVG" //Enables back the default sky color for NVG
+        },
+        "[Interchange]Tonemap": {
+            "Category": "Interchange",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Interchange]ACES": {
+            "Category": "Interchange",
+            "DispName": "ACES" //ACES
+        },
+        "[Interchange]ACESS": {
+            "Category": "Interchange",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Interchange]Filmic": {
+            "Category": "Interchange",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Interchange]FilmicS": {
+            "Category": "Interchange",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Interchange]MysticalGlow Intensity": {
+            "Category": "Interchange",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Labs
+        "[Labs]Tonemap": {
+            "Category": "Labs",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Labs]ACES": {
+            "Category": "Labs",
+            "DispName": "ACES" //ACES
+        },
+        "[Labs]ACESS": {
+            "Category": "Labs",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Labs]Filmic": {
+            "Category": "Labs",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Labs]FilmicS": {
+            "Category": "Labs",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Labs]HBAO Intensity": {
+            "Category": "Labs",
+            "DispName": "HBAO Intensity" //HBAO Intensity
+        },
+        "[Labs]HBAO Saturation": {
+            "Category": "Labs",
+            "DispName": "HBAO Saturation" //HBAO Saturation
+        },
+        "[Labs]HBAO Albedo Multiplier": {
+            "Category": "Labs",
+            "DispName": "HBAO Albedo Multiplier" //HBAO Albedo Multiplier
+        },
+        //Lighthouse
+        "[Lighthouse]Fog Level": {
+            "Category": "Lighthouse",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Lighthouse]Tonemap": {
+            "Category": "Lighthouse",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Lighthouse]ACES": {
+            "Category": "Lighthouse",
+            "DispName": "ACES" //ACES
+        },
+        "[Lighthouse]ACESS": {
+            "Category": "Lighthouse",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Lighthouse]Filmic": {
+            "Category": "Lighthouse",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Lighthouse]FilmicS": {
+            "Category": "Lighthouse",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Lighthouse]MysticalGlow Intensity": {
+            "Category": "Lighthouse",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Reserve
+        "[Reserve]Fog Level": {
+            "Category": "Reserve",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Reserve]Tonemap": {
+            "Category": "Reserve",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Reserve]ACES": {
+            "Category": "Reserve",
+            "DispName": "ACES" //ACES
+        },
+        "[Reserve]ACESS": {
+            "Category": "Reserve",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Reserve]Filmic": {
+            "Category": "Reserve",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Reserve]FilmicS": {
+            "Category": "Reserve",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Reserve]MysticalGlow Intensity": {
+            "Category": "Reserve",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Shoreline
+        "[Shoreline]Fog Level": {
+            "Category": "Shoreline",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Shoreline]Tonemap": {
+            "Category": "Shoreline",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Shoreline]ACES": {
+            "Category": "Shoreline",
+            "DispName": "ACES" //ACES
+        },
+        "[Shoreline]ACESS": {
+            "Category": "Shoreline",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Shoreline]Filmic": {
+            "Category": "Shoreline",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Shoreline]FilmicS": {
+            "Category": "Shoreline",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Shoreline]MysticalGlow Intensity": {
+            "Category": "Shoreline",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Streets
+        "[Streets]Fog Level": {
+            "Category": "Streets",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Streets]Tonemap": {
+            "Category": "Streets",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Streets]ACES": {
+            "Category": "Streets",
+            "DispName": "ACES" //ACES
+        },
+        "[Streets]ACESS": {
+            "Category": "Streets",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Streets]Filmic": {
+            "Category": "Streets",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Streets]FilmicS": {
+            "Category": "Streets",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Streets]MysticalGlow Intensity": {
+            "Category": "Streets",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        },
+        //Versioning
+        "Version": {
+            "Category": "Versioning",
+            "DispName": "Version" //Version
+        },
+        //Woods
+        "[Woods]Fog Level": {
+            "Category": "Woods",
+            "DispName": "Fog Level" //Fog Level
+        },
+        "[Woods]Tonemap": {
+            "Category": "Woods",
+            "DispName": "Tonemap" //Tonemap
+        },
+        "[Woods]ACES": {
+            "Category": "Woods",
+            "DispName": "ACES" //ACES
+        },
+        "[Woods]ACESS": {
+            "Category": "Woods",
+            "DispName": "ACESS" //ACESS
+        },
+        "[Woods]Filmic": {
+            "Category": "Woods",
+            "DispName": "Filmic" //Filmic
+        },
+        "[Woods]FilmicS": {
+            "Category": "Woods",
+            "DispName": "FilmicS" //FilmicS
+        },
+        "[Woods]MysticalGlow Intensity": {
+            "Category": "Woods",
+            "DispName": "MysticalGlow Intensity" //MysticalGlow Intensity
+        }
+    },
+    //选项汉化
+    "Enum": {
+        "EEnabledFeature": {
+            "Off": "Off",
+            "On": "On"
+        },
+        "EDepthOfField": {
+            "Off": "Off",
+            "On": "On",
+            "HoldingBreathOnly": "HoldingBreathOnly"
+        },
+        "KernelSize": {
+            "Small": "Small",
+            "Medium": "Medium",
+            "Large": "Large",
+            "VeryLarge": "VeryLarge"
+        },
+        "EUIDepthOfField": {
+            "Off": "Off",
+            "On": "On"
+        },
+        "EWeaponDepthOfField": {
+            "Off": "Off",
+            "On": "On"
+        },
+        "BlurSampleCount": {
+            "Low": "Low",
+            "Medium": "Medium",
+            "High": "High"
+        },
+        "EOpticDOFFocalLengthMode": {
+            "Math": "Math",
+            "FixedValue": "FixedValue"
+        },
+        "ERaycastQuality": {
+            "Low": "Low",
+            "High": "High",
+            "Foliage": "Foliage"
+        },
+        "ETonemap": {
+            "Default": "Default",
+            "ACES": "ACES",
+            "Filmic": "Filmic"
+        },
+        "EDebugMode": {
+            "Flashlight": "Flashlight",
+            "NVG": "NVG",
+            "NVGOriginalColor": "NVGOriginalColor",
+            "NightAmbientLight": "NightAmbientLight",
+            "HBAO": "HBAO",
+            "MysticalGlow": "MysticalGlow",
+            "DefaultToACES": "DefaultToACES",
+            "DefaultToFilmic": "DefaultToFilmic",
+            "ACESToFilmic": "ACESToFilmic",
+            "useLut": "useLut",
+            "CC_Vintage": "CC_Vintage",
+            "CC_Sharpen": "CC_Sharpen",
+            "GlobalFog": "GlobalFog",
+            "ColorCorrectionCurves": "ColorCorrectionCurves",
+            "LightsUseLinearIntensity": "LightsUseLinearIntensity",
+            "SunColor": "SunColor",
+            "SkyColor": "SkyColor"
+        },
+        "EGlobalTonemap": {
+            "Default": "Default",
+            "ACES": "ACES",
+            "Filmic": "Filmic",
+            "PerMap": "PerMap"
+        }
+    }
+}

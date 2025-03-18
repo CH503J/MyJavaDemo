@@ -1,0 +1,144 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "LeaveItThere"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        //0: Debug
+        "Rigidbody Sleep Threshold": {
+            "Category": "0: Debug",
+            "DispName": "Rigidbody Sleep Threshold", //Rigidbody Sleep Threshold
+            "Description": "When object velocity is less than this, the object stops interacting with physics systems." //When object velocity is less than this, the object stops interacting with physics systems.
+        },
+        "Number Of Frames To Wake Up Physics Object": {
+            "Category": "0: Debug",
+            "DispName": "Number Of Frames To Wake Up Physics Object", //Number Of Frames To Wake Up Physics Object
+            "Description": "Number of frames to enable physics before Rigidbody Sleep Threshold checks start happening." //Number of frames to enable physics before Rigidbody Sleep Threshold checks start happening.
+        },
+        //1: Cost System
+        "Cost System Enabled": {
+            "Category": "1: Cost System",
+            "DispName": "Cost System Enabled", //Cost System Enabled
+            "Description": "It is highly reccomended to leave this enabled. Disabling it will allow infinite placement of items on all maps." //It is highly reccomended to leave this enabled. Disabling it will allow infinite placement of items on all maps.
+        },
+        "Minimum Placement Cost": {
+            "Category": "1: Cost System",
+            "DispName": "Minimum Placement Cost", //Minimum Placement Cost
+            "Description": "Minimum cost for placing an item. Any items that would otherwise cost less than this will cost this amount instead." //Minimum cost for placing an item. Any items that would otherwise cost less than this will cost this amount instead.
+        },
+        "Minimum Placement Cost Items Can Be Placed": {
+            "Category": "1: Cost System",
+            "DispName": "Minimum Placement Cost Items Can Be Placed", //Minimum Placement Cost Items Can Be Placed
+            "Description": "Set to false to prevent mininum cost or less items from being placeable entirely." //Set to false to prevent mininum cost or less items from being placeable entirely.
+        },
+        //1: General
+        "Placed Item Color Tint": {
+            "Category": "1: General",
+            "DispName": "Placed Item Color Tint", //Placed Item Color Tint
+            "Description": "Color tint that will be applied to items when they are placed" //Color tint that will be applied to items when they are placed
+        },
+        //2: Move Mode
+        "Move Mode Requires Inventory Space": {
+            "Category": "2: Move Mode",
+            "DispName": "Move Mode Requires Inventory Space", //Move Mode Requires Inventory Space
+            "Description": "When set to true, you can only use 'MOVE' on placed items when you have the inventory space to pick them up." //When set to true, you can only use 'MOVE' on placed items when you have the inventory space to pick them up.
+        },
+        "Sprinting Cancels Move Mode": {
+            "Category": "2: Move Mode",
+            "DispName": "Sprinting Cancels Move Mode", //Sprinting Cancels Move Mode
+            "Description": "If true, sprinting will cancel 'MOVE' mode." //If true, sprinting will cancel 'MOVE' mode.
+        },
+        "Rotation Speed": {
+            "Category": "2: Move Mode",
+            "DispName": "Rotation Speed", //Rotation Speed
+            "Description": "Speed items will rotate in rotation mode." //Speed items will rotate in rotation mode.
+        },
+        "Invert Horizontal Rotation Direction": {
+            "Category": "2: Move Mode",
+            "DispName": "Invert Horizontal Rotation Direction" //Invert Horizontal Rotation Direction
+        },
+        "Invert Vertical Rotation Direction": {
+            "Category": "2: Move Mode",
+            "DispName": "Invert Vertical Rotation Direction" //Invert Vertical Rotation Direction
+        },
+        //3: Collision / Physics
+        "Placed Items Collide With Player And Bots": {
+            "Category": "3: Collision / Physics",
+            "DispName": "Placed Items Collide With Player And Bots", //Placed Items Collide With Player And Bots
+            "Description": "This setting requires a raid restart to fully take affect! Items at or larger than the minimum physical item size will collide with the player and block AI pathing. If you are using Fika, it's recommended to sync this setting with all clients." //This setting requires a raid restart to fully take affect! Items at or larger than the minimum physical item size will collide with the player and block AI pathing. If you are using Fika, it's recommended to sync this setting with all clients.
+        },
+        "Minimum Physical Item Size": {
+            "Category": "3: Collision / Physics",
+            "DispName": "Minimum Physical Item Size", //Minimum Physical Item Size
+            "Description": "Items at or larger than this size will be considered physical to the player and bots when collision is enabled. It is HIGHLY recommended to keep this number above 10 to avoid having tons of small items that the player and AI cannot pass through. Size = the number of inventory spaces the item takes up. If you are using Fika, it's recommended to sync this setting with all clients." //Items at or larger than this size will be considered physical to the player and bots when collision is enabled. It is HIGHLY recommended to keep this number above 10 to avoid having tons of small items that the player and AI cannot pass through. Size = the number of inventory spaces the item takes up. If you are using Fika, it's recommended to sync this setting with all clients.
+        },
+        "Immersive Physics (no floating items)": {
+            "Category": "3: Collision / Physics",
+            "DispName": "Immersive Physics (no floating items)", //Immersive Physics (no floating items)
+            "Description": "If you want to be able to make items float wherever you want, set to false." //If you want to be able to make items float wherever you want, set to false.
+        },
+        "Hotkey That Toggles Immersive Physics": {
+            "Category": "3: Collision / Physics",
+            "DispName": "Hotkey That Toggles Immersive Physics", //Hotkey That Toggles Immersive Physics
+            "Description": "Hotkey that toggles Immersive Physics setting." //Hotkey that toggles Immersive Physics setting.
+        },
+        //9: Allotted Point Limits Per Map
+        "Customs": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Customs", //Customs
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Factory": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Factory", //Factory
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Interchange": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Interchange", //Interchange
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Lab": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Lab", //Lab
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Lighthouse": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Lighthouse", //Lighthouse
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Reserve": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Reserve", //Reserve
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Ground Zero": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Ground Zero", //Ground Zero
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Shoreline": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Shoreline", //Shoreline
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Streets": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Streets", //Streets
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        },
+        "Woods": {
+            "Category": "9: Allotted Point Limits Per Map",
+            "DispName": "Woods", //Woods
+            "Description": "Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not." //Maximum number of placement points that can be used on this map. An items costs the amount of inventory cells it holds if it is a container, or it's size if it is not.
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}

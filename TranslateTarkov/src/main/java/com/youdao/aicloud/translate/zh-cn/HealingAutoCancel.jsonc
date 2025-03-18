@@ -1,0 +1,20 @@
+{
+    //模组名称汉化
+    "PluginInfo": {
+        "PluginName": "HealingAutoCancel"
+    },
+    //设置汉化
+    //Category：设置类别
+    //DispName：设置名称
+    //Description：设置介绍
+    "ConfigEntries": {
+        "Enable automatic heal canceling": {
+            "Category": "Heal",
+            "DispName": "Enable automatic heal canceling", //Enable automatic heal canceling
+            "Description": "Plugin GUID: HealingAutoCancel" //Plugin GUID: HealingAutoCancel
+        }
+    },
+    //选项汉化
+    "Enum": {
+    }
+}
